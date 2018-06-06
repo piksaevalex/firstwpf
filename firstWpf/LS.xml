@@ -1,0 +1,1495 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<Document ProgramVersion="8.1.1.20069" Generator="GrandSmeta" DocumentType="{2B0470FD-477C-4359-9F34-EEBE36B7D340}">
+  <Properties LocNum="02-01-01-01"/>
+  <Parameters Options="RoundPos SeparateFot" BasePrices="2001" BaseCalcVrs="Vr2001" TzDigits="2" BlockRoundMode="Smart" MultKPosCalcMode="UseTotalMult" TempZone="1" TsnTempZone="1" MatDigits="2" MatRoundMode="SignDigitsPreserveInt" PosKDigits="2" ItogOptions="SeparateChapters SeparateVrs" FirstItogItem="K" ItogExpandTo="Default">
+    <Numbering Mode="Sequential" Options="Auto"/>
+    <CommonNK ActiveItems="Vk Ck Mk"/>
+    <CommonPK ActiveItems="Vk Ck Mk"/>
+  </Parameters>
+  <Indexes IndexesMode="None" IndexesLinkMode="Default">
+    <OsIndexes/>
+  </Indexes>
+  <OsInfo OSChapter="1" LinkType="LB">
+    <CCChapter Cons="2" Rec="2" Road="2"/>
+  </OsInfo>
+  <RegionInfo RegionName="Ямало-Ненецкий АО (редакция 2009 г.)" RegionID="4890" Zone84Name="Базовый территориальный район" Zone84ID="1" Zone01Name="4 зона 1 подзона" Zone01ID="41"/>
+  <RegionalK Options="InPos Base"/>
+  <TerZoneK Caption="Территориальная поправка к базе 2001г" Options="Base PzAll EmAll"/>
+  <VidRab_Catalog Caption="2011_Районы Крайнего Севера">
+    <Vids_Rab Type="Виды работ 2001г">
+      <VidRab_Group Caption="Общестроительные работы" ID="0">
+        <Vid_Rab Caption="Земляные работы, выполняемые механизированным способом" ID="10001" Nacl="105" NaclMask="ФОТ" Plan="50" PlanMask="ФОТ" NaclCurr="105" PlanCurr="50" NKI="0.85" PKI="0.8" NKR="0.85" PKR="0.8"/>
+        <Vid_Rab Caption="Земляные работы, выполняемые по другим видам работ (подготовительным, сопутствующим, укрепительным)" ID="10004" Nacl="88" NaclMask="ФОТ" Plan="45" PlanMask="ФОТ" NaclCurr="88" PlanCurr="45" NKI="0.85" PKI="0.8" NKR="0.85" PKR="0.8"/>
+        <Vid_Rab Caption="Материалы для строительных работ" ID="10091" NaclMask="ФОТ" PlanMask="ФОТ"/>
+        <Vid_Rab Caption="Мосты и трубы" ID="10035" Nacl="148" NaclMask="ФОТ" Plan="80" PlanMask="ФОТ" NaclCurr="148" PlanCurr="80"/>
+        <Vid_Rab Caption="Автомобильные дороги" ID="10031" Nacl="156" NaclMask="ФОТ" Plan="95" PlanMask="ФОТ" NaclCurr="156" PlanCurr="95" NKI="0.85" PKI="0.8" NKR="0.85" PKR="0.8"/>
+        <Vid_Rab Caption="Материалы" ID="2945" NaclMask="ФОТ" PlanMask="ФОТ"/>
+        <Vid_Rab Caption="Бетонные и железобетонные сборные конструкции в жилищно-гражданском строительстве" ID="10014" Nacl="171" NaclMask="ФОТ" Plan="100" PlanMask="ФОТ" NaclCurr="171" PlanCurr="100" NKI="0.85" PKI="0.8" NKR="0.85" PKR="0.8"/>
+        <Vid_Rab Caption="Бетонные и железобетонные сборные конструкции в промышленном строительстве" ID="10013" Nacl="143" NaclMask="ФОТ" Plan="85" PlanMask="ФОТ" NaclCurr="143" PlanCurr="85" NKI="0.85" PKI="0.8" NKR="0.85" PKR="0.8"/>
+        <Vid_Rab Caption="Деревянные конструкции" ID="10017" Nacl="130" NaclMask="ФОТ" Plan="63" PlanMask="ФОТ" NaclCurr="130" PlanCurr="63" NKI="0.85" PKI="0.8" NKR="0.85" PKR="0.8"/>
+        <Vid_Rab Caption="Отделочные работы" ID="10025" Nacl="116" NaclMask="ФОТ" Plan="55" PlanMask="ФОТ" NaclCurr="116" PlanCurr="55" NKI="0.85" PKI="0.8" NKR="0.85" PKR="0.8"/>
+      </VidRab_Group>
+      <VidRab_Group Caption="Перевозки грузов" ID="1013">
+        <Vid_Rab Caption="Перевозка грузов автотранспортом" ID="10133" NaclMask="ФОТ" PlanMask="ФОТ"/>
+      </VidRab_Group>
+      <VidRab_Group Caption="Сантехнические работы" ID="4">
+        <Vid_Rab Caption="Сантехнические работы - внутренние (трубопроводы, водопровод, канализация, отопление, газоснабжение, вентиляция и кондиционирование воздуха)" ID="10026" Nacl="141" NaclMask="ФОТ" Plan="83" PlanMask="ФОТ" NaclCurr="141" PlanCurr="83" NKI="0.85" PKI="0.8" NKR="0.85" PKR="0.8"/>
+      </VidRab_Group>
+      <VidRab_Group Caption="Монтажные работы" ID="10003"/>
+      <VidRab_Group Caption="Ремонтно-строительные работы" ID="5">
+        <Vid_Rab Caption="Материалы" ID="2951" NaclMask="ФОТ" PlanMask="ФОТ"/>
+      </VidRab_Group>
+    </Vids_Rab>
+    <Vids_Rab Type="Виды работ 1984г"/>
+  </VidRab_Catalog>
+  <Koefficients>
+    <K Caption="Районный  коэффициент" Options="Percent InPos Base Curr OzpTz ZpmTz" Value_OZ="1,8" Value_ZM="1,8" Level="2"/>
+    <K Caption="Стесненность" Options="Percent InPos Base Curr EmAll EmQty OzpTz ZpmTz" Value_OZ="1,15" Value_EM="1,15" Level="3" AllVidRabs="No" ChaptersLinks="(2)" VrsLinks="(10001, 10002, 10004, 10007, 10008, 10013, 10014, 10018, 10020, 10028, 10031, 10057, 10060)" VrGroupsLinks="(1, 15)"/>
+  </Koefficients>
+  <WinterCatalog WinterMode="None" WinterLinkMode="Table">
+    <CommonWinterK/>
+  </WinterCatalog>
+  <Chapters>
+    <Chapter Caption="Кустовое  основание" SysID="1">
+      <Header Caption="Досыпка основания из привозного грунта"/>
+      <Position Caption="Разработка грунта с перемещением грунта до 10 м бульдозерами мощностью: 340 кВт (450 л.с.), группа грунтов 2" Number="1" Code="ТЕР01-01-086-06" Units="1000 м3 грунта" SysID="423" Quantity2="ОКР(8140*0,3/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="8140*0,3/1000" KUnit="1000" Precision="3" Result="2,442"/>
+        <PriceBase PZ="1001,4" EM="1001,4" ZM="31,25"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="1,87"/>
+          <Mch Caption="Бульдозеры при работе на сооружении магистральных трубопроводов: 340 кВт (450 л.c.)" Code="070122" Units="маш.час" Quantity2="1,87">
+            <PriceBase Value="535,51" ZM="16,71"/>
+          </Mch>
+        </Resources>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта с перемещением."/>
+        </WorksList>
+      </Position>
+      <Position Caption="При перемещении грунта на каждые последующие 10 м добавлять: к расценке 01-01-086-06 до 40м" Number="2" Code="ТЕР01-01-086-14" Units="1000 м3 грунта" SysID="424" Quantity2="ОКР(8140*0,3/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="8140*0,3/1000" KUnit="1000" Precision="3" Result="2,442"/>
+        <PriceBase PZ="765,78" EM="765,78" ZM="23,9"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="1,43"/>
+          <Mch Caption="Бульдозеры при работе на сооружении магистральных трубопроводов: 340 кВт (450 л.c.)" Code="070122" Units="маш.час" Quantity2="1,43">
+            <PriceBase Value="535,51" ZM="16,71"/>
+          </Mch>
+        </Resources>
+        <Koefficients>
+          <K Options="Base Curr PzAll EmAll MatQty EmQty OzpTz ZpmTz" Value_PZ="3" Level="3"/>
+        </Koefficients>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта с перемещением."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Разработка грунта с погрузкой в автомобили-самосвалы экскаваторами типа &quot;ATLAS&quot;, &quot;VOLVO&quot;, &quot;KOMATSU&quot;, &quot;HITACHI&quot;, &quot;LIEBHER&quot; с ковшом вместимостью 1,6 (1,25-1,6) м3, группа грунтов: 1" Number="3" Code="ТЕР01-01-012-25" Units="1000 м3 грунта" SysID="425" Quantity2="ОКР(8140/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="Comment TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="8140/1000" KUnit="1000" Precision="3" Result="8,14"/>
+        <PriceBase PZ="4405,34" OZ="25,98" EM="4379,36" ZM="211,57"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-2-0" Units="чел.час" Quantity2="3,41" WorkClass="2">
+            <PriceBase Value="7,62"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="16,15"/>
+          <Mch Caption="Экскаваторы на гусеничном ходу импортного производства типа «ATLAS», «VOLVO», «KOMATSU», «HITACHI», «LIEBHER» с емкостью ковша: 1,6 м3" Code="060259" Units="маш.час" Quantity2="6,99">
+            <PriceBase Value="584,89" ZM="26,09"/>
+          </Mch>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070149" Units="маш.час" Quantity2="2,17">
+            <PriceBase Value="134,09" ZM="13,48"/>
+          </Mch>
+          <Mat Caption="Щебень" Code="408-9080" Units="м3" Quantity2="0,1" Options="NotCount"/>
+        </Resources>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта экскаваторами с погрузкой на автомобили-самосвалы."/>
+          <Work Caption="Планировка поверхности забоя и земляного полотна забойной дороги бульдозером."/>
+          <Work Caption="Содержание забойной дороги."/>
+          <Work Caption="Вспомогательные работы, выполняемые вручную, связанные с устройством водоотводных канав или ограждающих валиков, с переходом экскаватора с одного места на другое и из забоя в забой и т.д."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Стоимость песчаного грунта" Number="4" Code="Данные  заказчика" Units="м3" SysID="266" Quantity2="ОКР(8140; 3)" PriceLevel="2001" PzSync="Yes" Vr2001="2945">
+        <Quantity1 Fx="8140" Precision="3" Result="8140"/>
+        <PriceBase PZ="29,54"/>
+        <ExcludedKfs Value="(0)"/>
+      </Position>
+      <Position Caption="Перевозка грузов автомобилями-самосвалами грузоподъемностью 10 т работающих вне карьера: расстояние перевозки до 14 км;нормативное время пробега 1,223 час;класс груза 1" Number="5" Code="ТСЦпг310-3014-1" Units="1т" SysID="281" Quantity2="ОКР(8140*1,75; 0)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10133">
+        <Quantity1 Fx="8140*1,75" Precision="0" Result="14245"/>
+        <PriceBase PZ="26,32" EM="26,32"/>
+      </Position>
+      <Position Caption="Ремонт и содержание грунтовых землевозных дорог на каждые 0,5 км длины, группа грунтов: 1" Number="6" Code="ТЕР01-01-015-01" Units="1000 м3 грунта" SysID="268" Quantity2="ОКР(8140/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="8140/1000" KUnit="1000" Precision="3" Result="8,14"/>
+        <PriceBase PZ="262,21" EM="246,04" ZM="12,48" MT="16,17"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="0,99"/>
+          <Mch Caption="Автогрейдеры: среднего типа 99 кВт (135 л.с.)" Code="120202" Units="маш.час" Quantity2="0,99">
+            <PriceBase Value="248,53" ZM="12,61"/>
+          </Mch>
+          <Mat Caption="Щебень из природного камня для строительных работ марка: 800, фракция 20-40 мм" Code="408-0015" Units="м3" Quantity2="0,1" Options="OwnerMat">
+            <PriceBase Value="161,7"/>
+          </Mat>
+        </Resources>
+        <Koefficients>
+          <K Options="Base Curr PzAll EmAll MatQty EmQty OzpTz ZpmTz" Value_PZ="28" Level="1"/>
+        </Koefficients>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Ремонт и содержание дороги от забоя до отвала при транспортировке грунта автомобилями-самосвалами, полуприцепами-самосвалами или думперами."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Работа на отвале, группа грунтов: 2-3" Number="7" Code="ТЕР01-01-016-02" Units="1000 м3 грунта" SysID="269" Quantity2="ОКР(8140/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="8140/1000" KUnit="1000" Precision="3" Result="8,14"/>
+        <PriceBase PZ="579,28" OZ="27,81" EM="545" ZM="53,52" MT="6,47"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-2-0" Units="чел.час" Quantity2="3,65" WorkClass="2">
+            <PriceBase Value="7,62"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="3,97"/>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070149" Units="маш.час" Quantity2="3,97">
+            <PriceBase Value="134,09" ZM="13,48"/>
+          </Mch>
+          <Mch Caption="Автомобиль-самосвал, грузоподъемность: до 7 т" Code="400051" Units="маш.час" Quantity2="0,08" Attribs="Deleted">
+            <PriceBase Value="158,25"/>
+          </Mch>
+          <Mat Caption="Щебень из природного камня для строительных работ марка: 800, фракция 20-40 мм" Code="408-0015" Units="м3" Quantity2="0,04" Attribs="Deleted">
+            <PriceBase Value="161,7"/>
+          </Mat>
+        </Resources>
+        <WorksList>
+          <Work Caption="Перемещение и разравнивание выгруженного грунта из автомобилей-самосвалов."/>
+          <Work Caption="Содержание проездов на отвале."/>
+          <Work Caption="Очистка кузовов автомобилей-самосвалов при их выгрузке."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Уплотнение грунта прицепными катками на пневмоколесном ходу 25 т на первый проход по одному следу при толщине слоя: 30 см" Number="8" Code="ТЕР01-02-001-02" Units="1000 м3 уплотненного грунта" SysID="487" Quantity2="ОКР(7675/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="7675/1000" KUnit="1000" Precision="3" Result="7,675"/>
+        <PriceBase PZ="2137,67" EM="2137,67" ZM="207,46"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="15,39"/>
+          <Mch Caption="Тракторы на гусеничном ходу при работе на других видах строительства: 79 кВт (108 л.с.)" Code="010312" Units="маш.час" Quantity2="1,38">
+            <PriceBase Value="141,44" ZM="13,48"/>
+          </Mch>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070149" Units="маш.час" Quantity2="14,01">
+            <PriceBase Value="134,09" ZM="13,48"/>
+          </Mch>
+          <Mch Caption="Катки дорожные прицепные на пневмоколесном ходу: 25 т" Code="120711" Units="маш.час" Quantity2="1,38">
+            <PriceBase Value="46,29"/>
+          </Mch>
+        </Resources>
+        <WorksList>
+          <Work Caption="Разравнивание грунта перед уплотнением."/>
+          <Work Caption="Уплотнение грунта."/>
+        </WorksList>
+      </Position>
+      <Position Caption="На каждый последующий проход по одному следу добавлять: к расценке 01-02-001-02" Number="9" Code="ТЕР01-02-001-08" Units="1000 м3 уплотненного грунта" SysID="488" Quantity2="ОКР(7675/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="7675/1000" KUnit="1000" Precision="3" Result="7,675"/>
+        <PriceBase PZ="259,07" EM="259,07" ZM="18,6"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="1,38"/>
+          <Mch Caption="Тракторы на гусеничном ходу при работе на других видах строительства: 79 кВт (108 л.с.)" Code="010312" Units="маш.час" Quantity2="1,38">
+            <PriceBase Value="141,44" ZM="13,48"/>
+          </Mch>
+          <Mch Caption="Катки дорожные прицепные на пневмоколесном ходу: 25 т" Code="120711" Units="маш.час" Quantity2="1,38">
+            <PriceBase Value="46,29"/>
+          </Mch>
+        </Resources>
+        <Koefficients>
+          <K Options="Base Curr PzAll EmAll MatQty EmQty OzpTz ZpmTz" Value_PZ="6" Level="1"/>
+        </Koefficients>
+        <WorksList>
+          <Work Caption="Разравнивание грунта перед уплотнением."/>
+          <Work Caption="Уплотнение грунта."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Планировка откосов и полотна: насыпей механизированным способом, группа грунтов 2" Number="10" Code="ТЕР01-02-027-12" Units="1000 м2 спланированной площади" SysID="139" Quantity2="ОКР((1292+2310)/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10004">
+        <Quantity1 Fx="(1292+2310)/1000" KUnit="1000" Precision="3" Result="3,602"/>
+        <PriceBase PZ="825,48" OZ="240,6" EM="584,88" ZM="36,54"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-1-8" Units="чел.час" Quantity2="32,08" WorkClass="1,8">
+            <PriceBase Value="7,5"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="2,87"/>
+          <Mch Caption="Экскаваторы одноковшовые дизельные на гусеничном ходу при работе на других видах строительства: 0,65 м3" Code="060248" Units="маш.час" Quantity2="0,83">
+            <PriceBase Value="148,98" ZM="12,61"/>
+          </Mch>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070149" Units="маш.час" Quantity2="0,4">
+            <PriceBase Value="134,09" ZM="13,48"/>
+          </Mch>
+          <Mch Caption="Автогрейдеры: среднего типа 99 кВт (135 л.с.)" Code="120202" Units="маш.час" Quantity2="1,64">
+            <PriceBase Value="248,53" ZM="12,61"/>
+          </Mch>
+        </Resources>
+        <WorksList>
+          <Work Caption="Планировка поверхности со срезкой неровностей."/>
+          <Work Caption="Засыпка углублений, уплотнение грунта, зачистка поверхности и проверка шаблоном."/>
+          <Work Caption="Планировка основной площадки полотна."/>
+          <Work Caption="Устройство сливной призмы и зачистка неровностей."/>
+          <Work Caption="Планировка откосов срезкой."/>
+          <Work Caption="Разравнивание грунта и планировка естественной бермы."/>
+        </WorksList>
+      </Position>
+      <Header Caption="Устройство теплоизолирующей присыпки из привозного торфа по откосу насыпи"/>
+      <Position Caption="Разработка грунта с перемещением грунта до 10 м бульдозерами мощностью: 340 кВт (450 л.с.), группа грунтов 2" Number="11" Code="ТЕР01-01-086-06" Units="1000 м3 грунта" SysID="426" Quantity2="ОКР(1930*0,3/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="1930*0,3/1000" KUnit="1000" Precision="3" Result="0,579"/>
+        <PriceBase PZ="1001,4" EM="1001,4" ZM="31,25"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="1,87"/>
+          <Mch Caption="Бульдозеры при работе на сооружении магистральных трубопроводов: 340 кВт (450 л.c.)" Code="070122" Units="маш.час" Quantity2="1,87">
+            <PriceBase Value="535,51" ZM="16,71"/>
+          </Mch>
+        </Resources>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта с перемещением."/>
+        </WorksList>
+      </Position>
+      <Position Caption="При перемещении грунта на каждые последующие 10 м добавлять: к расценке 01-01-086-06" Number="12" Code="ТЕР01-01-086-14" Units="1000 м3 грунта" SysID="427" Quantity2="ОКР(1930*0,3/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="1930*0,3/1000" KUnit="1000" Precision="3" Result="0,579"/>
+        <PriceBase PZ="765,78" EM="765,78" ZM="23,9"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="1,43"/>
+          <Mch Caption="Бульдозеры при работе на сооружении магистральных трубопроводов: 340 кВт (450 л.c.)" Code="070122" Units="маш.час" Quantity2="1,43">
+            <PriceBase Value="535,51" ZM="16,71"/>
+          </Mch>
+        </Resources>
+        <Koefficients>
+          <K Options="Base Curr PzAll EmAll MatQty EmQty OzpTz ZpmTz" Value_PZ="3" Level="3"/>
+        </Koefficients>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта с перемещением."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Разработка грунта с погрузкой в автомобили-самосвалы экскаваторами типа &quot;ATLAS&quot;, &quot;VOLVO&quot;, &quot;KOMATSU&quot;, &quot;HITACHI&quot;, &quot;LIEBHER&quot; с ковшом вместимостью 1,6 (1,25-1,6) м3, группа грунтов: 1" Number="13" Code="ТЕР01-01-012-25" Units="1000 м3 грунта" SysID="428" Quantity2="ОКР(1930/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="Comment TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="1930/1000" KUnit="1000" Precision="3" Result="1,93"/>
+        <PriceBase PZ="4405,34" OZ="25,98" EM="4379,36" ZM="211,57"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-2-0" Units="чел.час" Quantity2="3,41" WorkClass="2">
+            <PriceBase Value="7,62"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="16,15"/>
+          <Mch Caption="Экскаваторы на гусеничном ходу импортного производства типа «ATLAS», «VOLVO», «KOMATSU», «HITACHI», «LIEBHER» с емкостью ковша: 1,6 м3" Code="060259" Units="маш.час" Quantity2="6,99">
+            <PriceBase Value="584,89" ZM="26,09"/>
+          </Mch>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070149" Units="маш.час" Quantity2="2,17">
+            <PriceBase Value="134,09" ZM="13,48"/>
+          </Mch>
+          <Mat Caption="Щебень" Code="408-9080" Units="м3" Quantity2="0,1" Options="NotCount"/>
+        </Resources>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта экскаваторами с погрузкой на автомобили-самосвалы."/>
+          <Work Caption="Планировка поверхности забоя и земляного полотна забойной дороги бульдозером."/>
+          <Work Caption="Содержание забойной дороги."/>
+          <Work Caption="Вспомогательные работы, выполняемые вручную, связанные с устройством водоотводных канав или ограждающих валиков, с переходом экскаватора с одного места на другое и из забоя в забой и т.д."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Стоимость торфа" Number="14" Code="Данные  заказчика" Units="м3" SysID="489" Quantity2="ОКР(1930; 0)" PriceLevel="2001" PzSync="Yes" Vr2001="10091">
+        <Quantity1 Fx="1930" Precision="0" Result="1930"/>
+        <PriceBase PZ="29,54"/>
+        <ExcludedKfs Value="(0)"/>
+      </Position>
+      <Position Caption="Перевозка грузов автомобилями-самосвалами грузоподъемностью 10 т работающих вне карьера: расстояние перевозки до 6 км;нормативное время пробега 0,701 час;класс груза 2" Number="15" Code="ТСЦпг310-3006-2" Units="1т" SysID="490" Quantity2="ОКР(1930*0,95; 0)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10133">
+        <Quantity1 Fx="1930*0,95" Precision="0" Result="1834"/>
+        <PriceBase PZ="17,75" EM="17,75"/>
+      </Position>
+      <Position Caption="Ремонт и содержание грунтовых землевозных дорог на каждые 0,5 км длины, группа грунтов: 1" Number="16" Code="ТЕР01-01-015-01" Units="1000 м3 грунта" SysID="7" Quantity2="ОКР(1930/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="1930/1000" KUnit="1000" Precision="3" Result="1,93"/>
+        <PriceBase PZ="262,21" EM="246,04" ZM="12,48" MT="16,17"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="0,99"/>
+          <Mch Caption="Автогрейдеры: среднего типа 99 кВт (135 л.с.)" Code="120202" Units="маш.час" Quantity2="0,99">
+            <PriceBase Value="248,53" ZM="12,61"/>
+          </Mch>
+          <Mat Caption="Щебень из природного камня для строительных работ марка: 800, фракция 20-40 мм" Code="408-0015" Units="м3" Quantity2="0,1">
+            <PriceBase Value="161,7"/>
+          </Mat>
+        </Resources>
+        <Koefficients>
+          <K Options="Base Curr PzAll EmAll MatQty EmQty OzpTz ZpmTz" Value_PZ="12" Level="1"/>
+        </Koefficients>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Ремонт и содержание дороги от забоя до отвала при транспортировке грунта автомобилями-самосвалами, полуприцепами-самосвалами или думперами."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Работа на отвале, группа грунтов: 2-3" Number="17" Code="ТЕР01-01-016-02" Units="1000 м3 грунта" SysID="8" Quantity2="ОКР(1930/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="1930/1000" KUnit="1000" Precision="3" Result="1,93"/>
+        <PriceBase PZ="579,28" OZ="27,81" EM="545" ZM="53,52" MT="6,47"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-2-0" Units="чел.час" Quantity2="3,65" WorkClass="2">
+            <PriceBase Value="7,62"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="3,97"/>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070149" Units="маш.час" Quantity2="3,97">
+            <PriceBase Value="134,09" ZM="13,48"/>
+          </Mch>
+          <Mch Caption="Автомобиль-самосвал, грузоподъемность: до 7 т" Code="400051" Units="маш.час" Quantity2="0,08" Attribs="Deleted">
+            <PriceBase Value="158,25"/>
+          </Mch>
+          <Mat Caption="Щебень из природного камня для строительных работ марка: 800, фракция 20-40 мм" Code="408-0015" Units="м3" Quantity2="0,04" Attribs="Deleted">
+            <PriceBase Value="161,7"/>
+          </Mat>
+        </Resources>
+        <WorksList>
+          <Work Caption="Перемещение и разравнивание выгруженного грунта из автомобилей-самосвалов."/>
+          <Work Caption="Содержание проездов на отвале."/>
+          <Work Caption="Очистка кузовов автомобилей-самосвалов при их выгрузке."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Уплотнение грунта прицепными катками на пневмоколесном ходу 25 т на первый проход по одному следу при толщине слоя: 30 см" Number="18" Code="ТЕР01-02-001-02" Units="1000 м3 уплотненного грунта" SysID="9" Quantity2="ОКР(1930/1,01/1,25/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="1930/1,01/1,25/1000" KUnit="1000" Precision="3" Result="1,529"/>
+        <PriceBase PZ="2137,67" EM="2137,67" ZM="207,46"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="15,39"/>
+          <Mch Caption="Тракторы на гусеничном ходу при работе на других видах строительства: 79 кВт (108 л.с.)" Code="010312" Units="маш.час" Quantity2="1,38">
+            <PriceBase Value="141,44" ZM="13,48"/>
+          </Mch>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070149" Units="маш.час" Quantity2="14,01">
+            <PriceBase Value="134,09" ZM="13,48"/>
+          </Mch>
+          <Mch Caption="Катки дорожные прицепные на пневмоколесном ходу: 25 т" Code="120711" Units="маш.час" Quantity2="1,38">
+            <PriceBase Value="46,29"/>
+          </Mch>
+        </Resources>
+        <WorksList>
+          <Work Caption="Разравнивание грунта перед уплотнением."/>
+          <Work Caption="Уплотнение грунта."/>
+        </WorksList>
+      </Position>
+      <Position Caption="На каждый последующий проход по одному следу добавлять: к расценке 01-02-001-02" Number="19" Code="ТЕР01-02-001-08" Units="1000 м3 уплотненного грунта" SysID="11" Quantity2="ОКР(1930/1,01/1,25/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="1930/1,01/1,25/1000" KUnit="1000" Precision="3" Result="1,529"/>
+        <PriceBase PZ="259,07" EM="259,07" ZM="18,6"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="1,38"/>
+          <Mch Caption="Тракторы на гусеничном ходу при работе на других видах строительства: 79 кВт (108 л.с.)" Code="010312" Units="маш.час" Quantity2="1,38">
+            <PriceBase Value="141,44" ZM="13,48"/>
+          </Mch>
+          <Mch Caption="Катки дорожные прицепные на пневмоколесном ходу: 25 т" Code="120711" Units="маш.час" Quantity2="1,38">
+            <PriceBase Value="46,29"/>
+          </Mch>
+        </Resources>
+        <Koefficients>
+          <K Options="Base Curr PzAll EmAll MatQty EmQty OzpTz ZpmTz" Value_PZ="6" Level="1"/>
+        </Koefficients>
+        <WorksList>
+          <Work Caption="Разравнивание грунта перед уплотнением."/>
+          <Work Caption="Уплотнение грунта."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Планировка откосов и полотна: насыпей механизированным способом, группа грунтов 2" Number="20" Code="ТЕР01-02-027-12" Units="1000 м2 спланированной площади" SysID="13" Quantity2="ОКР(2915/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10004">
+        <Quantity1 Fx="2915/1000" KUnit="1000" Precision="3" Result="2,915"/>
+        <PriceBase PZ="825,48" OZ="240,6" EM="584,88" ZM="36,54"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-1-8" Units="чел.час" Quantity2="32,08" WorkClass="1,8">
+            <PriceBase Value="7,5"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="2,87"/>
+          <Mch Caption="Экскаваторы одноковшовые дизельные на гусеничном ходу при работе на других видах строительства: 0,65 м3" Code="060248" Units="маш.час" Quantity2="0,83">
+            <PriceBase Value="148,98" ZM="12,61"/>
+          </Mch>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070149" Units="маш.час" Quantity2="0,4">
+            <PriceBase Value="134,09" ZM="13,48"/>
+          </Mch>
+          <Mch Caption="Автогрейдеры: среднего типа 99 кВт (135 л.с.)" Code="120202" Units="маш.час" Quantity2="1,64">
+            <PriceBase Value="248,53" ZM="12,61"/>
+          </Mch>
+        </Resources>
+        <WorksList>
+          <Work Caption="Планировка поверхности со срезкой неровностей."/>
+          <Work Caption="Засыпка углублений, уплотнение грунта, зачистка поверхности и проверка шаблоном."/>
+          <Work Caption="Планировка основной площадки полотна."/>
+          <Work Caption="Устройство сливной призмы и зачистка неровностей."/>
+          <Work Caption="Планировка откосов срезкой."/>
+          <Work Caption="Разравнивание грунта и планировка естественной бермы."/>
+        </WorksList>
+      </Position>
+    </Chapter>
+    <Chapter Caption="Укрепление откосов насыпи (длина откоса 327м)" SysID="9">
+      <Position Caption="Разработка грунта в отвал экскаваторами &quot;драглайн&quot; или &quot;обратная лопата&quot; с ковшом вместимостью: 0,65 (0,5-1) м3, группа грунтов 1" Number="21" Code="ТЕР01-01-003-07" Units="1000 м3 грунта" SysID="576" Quantity2="ОКР(49,2/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="Comment TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="49,2/1000" KUnit="1000" Precision="3" Result="0,049"/>
+        <PriceBase PZ="2752,34" OZ="63,25" EM="2689,09" ZM="227,61"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-2-0" Units="чел.час" Quantity2="8,3" WorkClass="2">
+            <PriceBase Value="7,62"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="18,05"/>
+          <Mch Caption="Экскаваторы одноковшовые дизельные на гусеничном ходу при работе на других видах строительства: 0,65 м3" Code="060248" Units="маш.час" Quantity2="18,05">
+            <PriceBase Value="148,98" ZM="12,61"/>
+          </Mch>
+        </Resources>
+        <WorksList>
+          <Work Caption="Разработка грунта навымет."/>
+          <Work Caption="Устройство и содержание водоотводных канав или ограждающих валиков."/>
+          <Work Caption="Вспомогательные работы, связанные с перемещением экскаватора из забоя в забой."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Разработка грунта с перемещением до 10 м бульдозерами мощностью: 96 кВт (130 л.с.), группа грунтов 2" Number="22" Code="ТЕР01-01-031-02" Units="1000 м3 грунта" SysID="577" Quantity2="ОКР(49,2/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="49,2/1000" KUnit="1000" Precision="3" Result="0,049"/>
+        <PriceBase PZ="1754,94" EM="1754,94" ZM="148,28"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="11"/>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 96 кВт (130 л.с.)" Code="070150" Units="маш.час" Quantity2="11">
+            <PriceBase Value="159,54" ZM="13,48"/>
+          </Mch>
+        </Resources>
+        <WorksList>
+          <Work Caption="Разработка грунта с перемещением."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Планировка откосов и полотна: выемок механизированным способом, группа грунтов 2" Number="23" Code="ТЕР01-02-027-09" Units="1000 м2 спланированной площади" SysID="578" Quantity2="ОКР(344/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10004">
+        <Quantity1 Fx="344/1000" KUnit="1000" Precision="3" Result="0,344"/>
+        <PriceBase PZ="1166,33" OZ="624,45" EM="541,88" ZM="38,75"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-1-8" Units="чел.час" Quantity2="83,26" WorkClass="1,8">
+            <PriceBase Value="7,5"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="3,03"/>
+          <Mch Caption="Экскаваторы одноковшовые дизельные на гусеничном ходу при работе на других видах строительства: 0,65 м3" Code="060248" Units="маш.час" Quantity2="1,42">
+            <PriceBase Value="148,98" ZM="12,61"/>
+          </Mch>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070149" Units="маш.час" Quantity2="0,61">
+            <PriceBase Value="134,09" ZM="13,48"/>
+          </Mch>
+          <Mch Caption="Автогрейдеры: среднего типа 99 кВт (135 л.с.)" Code="120202" Units="маш.час" Quantity2="1">
+            <PriceBase Value="248,53" ZM="12,61"/>
+          </Mch>
+        </Resources>
+        <WorksList>
+          <Work Caption="Планировка поверхности со срезкой неровностей."/>
+          <Work Caption="Засыпка углублений, уплотнение грунта, зачистка поверхности и проверка шаблоном."/>
+          <Work Caption="Планировка основной площадки полотна."/>
+          <Work Caption="Устройство сливной призмы и зачистка неровностей."/>
+          <Work Caption="Планировка откосов срезкой."/>
+          <Work Caption="Разравнивание грунта и планировка естественной бермы."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Устройство прослойки из нетканого синтетического материала (НСМ) при укреплении откосов: подтопляемой" Number="24" Code="ТЕР27-04-016-07" Units="1000 м2 поверхности" SysID="588" Quantity2="4135/1000" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10031">
+        <Quantity1 Fx="4135/1000" KUnit="1000" Result="4,135"/>
+        <PriceBase PZ="518,56" OZ="272,17" EM="225,62" ZM="9,46" MT="20,77"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-2-3" Units="чел.час" Quantity2="34,76" WorkClass="2,3">
+            <PriceBase Value="7,83"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="0,75"/>
+          <Mch Caption="Автогрейдеры: среднего типа 99 кВт (135 л.с.)" Code="120202" Units="маш.час" Quantity2="0,75">
+            <PriceBase Value="248,53" ZM="12,61"/>
+          </Mch>
+          <Mch Caption="Автомобили бортовые, грузоподъемность: до 5 т" Code="400001" Units="маш.час" Quantity2="0,3">
+            <PriceBase Value="130,74"/>
+          </Mch>
+          <Mat Caption="Полотно иглопробивное для дорожного строительства: «Дорнит-2»" Code="101-0792" Units="10 м2" Options="Project NotCount ExclFromQty">
+            <PriceBase Value="172,2"/>
+          </Mat>
+          <Mat Caption="Поковки из квадратных заготовок, масса: 1,8 кг" Code="101-0782" Units="т" Quantity2="0,0023" Attribs="Deleted">
+            <PriceBase Value="9030"/>
+          </Mat>
+        </Resources>
+        <WorksList>
+          <Work Caption="Планировка откосов."/>
+          <Work Caption="Раскладка рулонов НСМ."/>
+          <Work Caption="Закрепление полотен НСМ анкерами с последующей разборкой крепления."/>
+          <Work Caption="Склейка полотен НСМ."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Геомат МТД1-15(300)" Number="25" Code="Прайс ООО &quot;Стандартпарк Урал&quot; от 15.10.2015г" Units="м2" SysID="640" Quantity2="4430" PriceLevel="2001" PzSync="Yes" Vr2001="10031">
+        <Quantity1 Fx="4430" Result="4430"/>
+        <PriceBase PZ="52,98" MT="52,98">
+          <Fx MT="405/1,18/7,32*1,13"/>
+        </PriceBase>
+      </Position>
+      <Position Caption="Горячекатаная арматурная сталь гладкая класса А-I, диаметром: 6 мм" Number="26" Code="ТСЦ-204-0001" Units="т" SysID="580" Quantity2="ОКР((7856+329)*0,3*0,154*0,001; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10031">
+        <Quantity1 Fx="(7856+329)*0,3*0,154*0,001" Precision="3" Result="0,378"/>
+        <PriceBase PZ="5615,78" MT="5615,78"/>
+      </Position>
+      <Position Caption="Засыпка траншей и котлованов с перемещением грунта до 5 м бульдозерами мощностью: 96 кВт (130 л.с.), группа грунтов 2" Number="27" Code="ТЕР01-01-034-02" Units="1000 м3 грунта" SysID="591" Quantity2="ОКР(49,2/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="49,2/1000" KUnit="1000" Precision="3" Result="0,049"/>
+        <PriceBase PZ="1070,51" EM="1070,51" ZM="90,45"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="6,71"/>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 96 кВт (130 л.с.)" Code="070150" Units="маш.час" Quantity2="6,71">
+            <PriceBase Value="159,54" ZM="13,48"/>
+          </Mch>
+        </Resources>
+        <WorksList>
+          <Work Caption="Перемещение грунта с засыпкой траншей и котлованов."/>
+        </WorksList>
+      </Position>
+      <Position Caption="При перемещении грунта на каждые последующие 5 м добавлять: к расценке 01-01-034-02" Number="28" Code="ТЕР01-01-034-08" Units="1000 м3 грунта" SysID="590" Quantity2="ОКР(49,2/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="49,2/1000" KUnit="1000" Precision="3" Result="0,049"/>
+        <PriceBase PZ="515,31" EM="515,31" ZM="43,54"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="3,23"/>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 96 кВт (130 л.с.)" Code="070150" Units="маш.час" Quantity2="3,23">
+            <PriceBase Value="159,54" ZM="13,48"/>
+          </Mch>
+        </Resources>
+        <WorksList>
+          <Work Caption="Перемещение грунта с засыпкой траншей и котлованов."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Уплотнение грунта пневматическими трамбовками, группа грунтов: 1-2" Number="29" Code="ТЕР01-02-005-01" Units="100 м3 уплотненного грунта" SysID="593" Quantity2="ОКР(49,2/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="49,2/1000" KUnit="100" Precision="3" Result="0,049"/>
+        <PriceBase PZ="438,54" OZ="104,37" EM="334,17" ZM="28,55"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-3-0" Units="чел.час" Quantity2="12,53" WorkClass="3">
+            <PriceBase Value="8,33"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="3,04"/>
+          <Mch Caption="Компрессоры передвижные с двигателем внутреннего сгорания давлением: до 686 кПа (7 ат), производительность 5 м3/мин" Code="050102" Units="маш.час" Quantity2="3,04">
+            <PriceBase Value="102,03" ZM="9,39"/>
+          </Mch>
+          <Mch Caption="Трамбовки пневматические при работе от: передвижных компрессорных станций" Code="331100" Units="маш.час" Quantity2="12,18">
+            <PriceBase Value="1,97"/>
+          </Mch>
+        </Resources>
+        <WorksList>
+          <Work Caption="Уплотнение грунта."/>
+        </WorksList>
+      </Position>
+      <Header Caption="Укрепление откосов насыпи посевом трав"/>
+      <Position Caption="Разработка грунта с перемещением грунта до 10 м бульдозерами мощностью: 340 кВт (450 л.с.), группа грунтов 2" Number="30" Code="ТЕР01-01-086-06" Units="1000 м3 грунта" SysID="557" Quantity2="ОКР((3610*0,05/3*0,3*1,01)/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="(3610*0,05/3*0,3*1,01)/1000" KUnit="1000" Precision="3" Result="0,018"/>
+        <PriceBase PZ="1001,4" EM="1001,4" ZM="31,25"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="1,87"/>
+          <Mch Caption="Бульдозеры при работе на сооружении магистральных трубопроводов: 340 кВт (450 л.c.)" Code="070122" Units="маш.час" Quantity2="1,87">
+            <PriceBase Value="535,51" ZM="16,71"/>
+          </Mch>
+        </Resources>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта с перемещением."/>
+        </WorksList>
+      </Position>
+      <Position Caption="При перемещении грунта на каждые последующие 10 м добавлять: к расценке 01-01-086-06" Number="31" Code="ТЕР01-01-086-14" Units="1000 м3 грунта" SysID="558" Quantity2="ОКР((3610*0,05/3*0,3*1,01)/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="(3610*0,05/3*0,3*1,01)/1000" KUnit="1000" Precision="3" Result="0,018"/>
+        <PriceBase PZ="765,78" EM="765,78" ZM="23,9"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="1,43"/>
+          <Mch Caption="Бульдозеры при работе на сооружении магистральных трубопроводов: 340 кВт (450 л.c.)" Code="070122" Units="маш.час" Quantity2="1,43">
+            <PriceBase Value="535,51" ZM="16,71"/>
+          </Mch>
+        </Resources>
+        <Koefficients>
+          <K Options="Base Curr PzAll EmAll MatQty EmQty OzpTz ZpmTz" Value_PZ="3" Level="3"/>
+        </Koefficients>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта с перемещением."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Разработка грунта с погрузкой в автомобили-самосвалы экскаваторами типа &quot;ATLAS&quot;, &quot;VOLVO&quot;, &quot;KOMATSU&quot;, &quot;HITACHI&quot;, &quot;LIEBHER&quot; с ковшом вместимостью 1,6 (1,25-1,6) м3, группа грунтов: 1" Number="32" Code="ТЕР01-01-012-25" Units="1000 м3 грунта" SysID="559" Quantity2="ОКР(3610*0,05/3*1,01/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="Comment TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="3610*0,05/3*1,01/1000" KUnit="1000" Precision="3" Result="0,061"/>
+        <PriceBase PZ="4405,34" OZ="25,98" EM="4379,36" ZM="211,57"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-2-0" Units="чел.час" Quantity2="3,41" WorkClass="2">
+            <PriceBase Value="7,62"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="16,15"/>
+          <Mch Caption="Экскаваторы на гусеничном ходу импортного производства типа «ATLAS», «VOLVO», «KOMATSU», «HITACHI», «LIEBHER» с емкостью ковша: 1,6 м3" Code="060259" Units="маш.час" Quantity2="6,99">
+            <PriceBase Value="584,89" ZM="26,09"/>
+          </Mch>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070149" Units="маш.час" Quantity2="2,17">
+            <PriceBase Value="134,09" ZM="13,48"/>
+          </Mch>
+          <Mat Caption="Щебень" Code="408-9080" Units="м3" Quantity2="0,1" Options="NotCount"/>
+        </Resources>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта экскаваторами с погрузкой на автомобили-самосвалы."/>
+          <Work Caption="Планировка поверхности забоя и земляного полотна забойной дороги бульдозером."/>
+          <Work Caption="Содержание забойной дороги."/>
+          <Work Caption="Вспомогательные работы, выполняемые вручную, связанные с устройством водоотводных канав или ограждающих валиков, с переходом экскаватора с одного места на другое и из забоя в забой и т.д."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Стоимость песчаного грунта" Number="33" Code="Данные  заказчика" Units="м3" SysID="560" Quantity2="ОКР(3610*0,05/3*1,01; 0)" PriceLevel="2001" PzSync="Yes" Vr2001="10091">
+        <Quantity1 Fx="3610*0,05/3*1,01" Precision="0" Result="61"/>
+        <PriceBase PZ="29,54"/>
+      </Position>
+      <Position Caption="Перевозка грузов автомобилями-самосвалами грузоподъемностью 10 т работающих вне карьера: расстояние перевозки до 16 км;нормативное время пробега 1,314 час;класс груза 1" Number="34" Code="ТСЦпг310-3016-1" Units="1т" SysID="561" Quantity2="ОКР(3610*0,05/3*1,01*1,75; 0)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10133">
+        <Quantity1 Fx="3610*0,05/3*1,01*1,75" Precision="0" Result="106"/>
+        <PriceBase PZ="28,28" EM="28,28"/>
+      </Position>
+      <Position Caption="Ремонт и содержание грунтовых землевозных дорог на каждые 0,5 км длины, группа грунтов: 1" Number="35" Code="ТЕР01-01-015-01" Units="1000 м3 грунта" SysID="562" Quantity2="ОКР(3610*0,05/3*1,01/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="3610*0,05/3*1,01/1000" KUnit="1000" Precision="3" Result="0,061"/>
+        <PriceBase PZ="262,21" EM="246,04" ZM="12,48" MT="16,17"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="0,99"/>
+          <Mch Caption="Автогрейдеры: среднего типа 99 кВт (135 л.с.)" Code="120202" Units="маш.час" Quantity2="0,99">
+            <PriceBase Value="248,53" ZM="12,61"/>
+          </Mch>
+          <Mat Caption="Щебень из природного камня для строительных работ марка: 800, фракция 20-40 мм" Code="408-0015" Units="м3" Quantity2="0,1">
+            <PriceBase Value="161,7"/>
+          </Mat>
+        </Resources>
+        <Koefficients>
+          <K Options="Base Curr PzAll EmAll MatQty EmQty OzpTz ZpmTz" Value_PZ="32" Level="1"/>
+        </Koefficients>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Ремонт и содержание дороги от забоя до отвала при транспортировке грунта автомобилями-самосвалами, полуприцепами-самосвалами или думперами."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Работа на отвале, группа грунтов: 2-3" Number="36" Code="ТЕР01-01-016-02" Units="1000 м3 грунта" SysID="563" Quantity2="ОКР(3610*0,05/3*1,01/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="3610*0,05/3*1,01/1000" KUnit="1000" Precision="3" Result="0,061"/>
+        <PriceBase PZ="579,28" OZ="27,81" EM="545" ZM="53,52" MT="6,47"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-2-0" Units="чел.час" Quantity2="3,65" WorkClass="2">
+            <PriceBase Value="7,62"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="3,97"/>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070149" Units="маш.час" Quantity2="3,97">
+            <PriceBase Value="134,09" ZM="13,48"/>
+          </Mch>
+          <Mch Caption="Автомобиль-самосвал, грузоподъемность: до 7 т" Code="400051" Units="маш.час" Quantity2="0,08" Attribs="Deleted">
+            <PriceBase Value="158,25"/>
+          </Mch>
+          <Mat Caption="Щебень из природного камня для строительных работ марка: 800, фракция 20-40 мм" Code="408-0015" Units="м3" Quantity2="0,04" Attribs="Deleted">
+            <PriceBase Value="161,7"/>
+          </Mat>
+        </Resources>
+        <WorksList>
+          <Work Caption="Перемещение и разравнивание выгруженного грунта из автомобилей-самосвалов."/>
+          <Work Caption="Содержание проездов на отвале."/>
+          <Work Caption="Очистка кузовов автомобилей-самосвалов при их выгрузке."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Разработка грунта с перемещением грунта до 10 м бульдозерами мощностью: 340 кВт (450 л.с.), группа грунтов 1" Number="37" Code="ТЕР01-01-086-05" Units="1000 м3 грунта" SysID="564" Quantity2="ОКР(3610*0,05/3*2*1,01/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="3610*0,05/3*2*1,01/1000" KUnit="1000" Precision="3" Result="0,122"/>
+        <PriceBase PZ="942,5" EM="942,5" ZM="29,41"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="1,76"/>
+          <Mch Caption="Бульдозеры при работе на сооружении магистральных трубопроводов: 340 кВт (450 л.c.)" Code="070122" Units="маш.час" Quantity2="1,76">
+            <PriceBase Value="535,51" ZM="16,71"/>
+          </Mch>
+        </Resources>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта с перемещением."/>
+        </WorksList>
+      </Position>
+      <Position Caption="При перемещении грунта на каждые последующие 10 м добавлять: к расценке 01-01-086-05" Number="38" Code="ТЕР01-01-086-13" Units="1000 м3 грунта" SysID="565" Quantity2="ОКР(3610*0,05/3*2*1,01/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="3610*0,05/3*2*1,01/1000" KUnit="1000" Precision="3" Result="0,122"/>
+        <PriceBase PZ="706,87" EM="706,87" ZM="22,06"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="1,32"/>
+          <Mch Caption="Бульдозеры при работе на сооружении магистральных трубопроводов: 340 кВт (450 л.c.)" Code="070122" Units="маш.час" Quantity2="1,32">
+            <PriceBase Value="535,51" ZM="16,71"/>
+          </Mch>
+        </Resources>
+        <Koefficients>
+          <K Options="Base Curr PzAll EmAll MatQty EmQty OzpTz ZpmTz" Value_PZ="3" Level="3"/>
+        </Koefficients>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта с перемещением."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Стоимость торфа" Number="39" Code="Данные  заказчика" Units="м3" SysID="567" Quantity2="ОКР(122; 0)" PriceLevel="2001" PzSync="Yes" Vr2001="10091">
+        <Quantity1 Fx="122" Precision="0" Result="122"/>
+        <PriceBase PZ="29,54"/>
+      </Position>
+      <Position Caption="Рыхление грунтов бульдозерами-рыхлителями мощностью: 79 кВт (108 л.с.), глубина рыхления до 0,35 м, длина разрыхляемого участка до 100 м" Number="40" Code="ТЕР01-02-032-01" Units="1000 м3 грунта" SysID="571" Quantity2="ОКР((61+122)/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10004">
+        <Quantity1 Fx="(61+122)/1000" KUnit="1000" Precision="3" Result="0,183"/>
+        <PriceBase PZ="376,31" EM="376,31" ZM="29,93"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="2,22"/>
+          <Mch Caption="Бульдозеры-рыхлители на тракторе при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070223" Units="маш.час" Quantity2="2,22">
+            <PriceBase Value="169,51" ZM="13,48"/>
+          </Mch>
+        </Resources>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Рыхление плотных, твердых, полутвердых и слежавшихся грунтов с регулировкой глубины рыхления."/>
+          <Work Caption="Очистка рыхлителя от корней и налипающего грунта."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Разработка грунта с перемещением до 10 м бульдозерами мощностью: 96 кВт (130 л.с.), группа грунтов 1" Number="41" Code="ТЕР01-01-031-01" Units="1000 м3 грунта" SysID="572" Quantity2="ОКР((61+122)/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="(61+122)/1000" KUnit="1000" Precision="3" Result="0,183"/>
+        <PriceBase PZ="1544,35" EM="1544,35" ZM="130,49"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="9,68"/>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 96 кВт (130 л.с.)" Code="070150" Units="маш.час" Quantity2="9,68">
+            <PriceBase Value="159,54" ZM="13,48"/>
+          </Mch>
+        </Resources>
+        <Koefficients>
+          <K Caption="3.76 При перемещении бульдозерами ранее разработанных разрыхленных грунтов, за исключением взорванной скальной породы, сыпучих барханных и дюнных песков" Options="Base Curr EmAll MatQty EmQty OzpTz ZpmTz" Value_EM="0,85" Level="1"/>
+        </Koefficients>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта с перемещением."/>
+        </WorksList>
+      </Position>
+      <Position Caption="При перемещении грунта на каждые последующие 10 м добавлять: к расценке 01-01-031-01" Number="42" Code="ТЕР01-01-031-09" Units="1000 м3 грунта" SysID="573" Quantity2="ОКР((61+122)/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="(61+122)/1000" KUnit="1000" Precision="3" Result="0,183"/>
+        <PriceBase PZ="1298,66" EM="1298,66" ZM="109,73"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="8,14"/>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 96 кВт (130 л.с.)" Code="070150" Units="маш.час" Quantity2="8,14">
+            <PriceBase Value="159,54" ZM="13,48"/>
+          </Mch>
+        </Resources>
+        <Koefficients>
+          <K Options="Base Curr PzAll EmAll MatQty EmQty OzpTz ZpmTz" Value_PZ="4" Level="3"/>
+        </Koefficients>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта с перемещением."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Разработка грунта с погрузкой в автомобили-самосвалы экскаваторами типа &quot;ATLAS&quot;, &quot;VOLVO&quot;, &quot;KOMATSU&quot;, &quot;HITACHI&quot;, &quot;LIEBHER&quot; с ковшом вместимостью 1,6 (1,25-1,6) м3, группа грунтов: 1" Number="43" Code="ТЕР01-01-012-25" Units="1000 м3 грунта" SysID="611" Quantity2="ОКР((61+122)/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="Comment TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="(61+122)/1000" KUnit="1000" Precision="3" Result="0,183"/>
+        <PriceBase PZ="4405,34" OZ="25,98" EM="4379,36" ZM="211,57"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-2-0" Units="чел.час" Quantity2="3,41" WorkClass="2">
+            <PriceBase Value="7,62"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="16,15"/>
+          <Mch Caption="Экскаваторы на гусеничном ходу импортного производства типа «ATLAS», «VOLVO», «KOMATSU», «HITACHI», «LIEBHER» с емкостью ковша: 1,6 м3" Code="060259" Units="маш.час" Quantity2="6,99">
+            <PriceBase Value="584,89" ZM="26,09"/>
+          </Mch>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070149" Units="маш.час" Quantity2="2,17">
+            <PriceBase Value="134,09" ZM="13,48"/>
+          </Mch>
+          <Mat Caption="Щебень" Code="408-9080" Units="м3" Quantity2="0,1" Options="NotCount ExclFromQty"/>
+        </Resources>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта экскаваторами с погрузкой на автомобили-самосвалы."/>
+          <Work Caption="Планировка поверхности забоя и земляного полотна забойной дороги бульдозером."/>
+          <Work Caption="Содержание забойной дороги."/>
+          <Work Caption="Вспомогательные работы, выполняемые вручную, связанные с устройством водоотводных канав или ограждающих валиков, с переходом экскаватора с одного места на другое и из забоя в забой и т.д."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Перевозка грузов автомобилями-самосвалами грузоподъемностью 10 т работающих вне карьера: расстояние перевозки до 6 км;нормативное время пробега 0,701 час;класс груза 2" Number="44" Code="ТСЦпг310-3006-2" Units="1т" SysID="616" Quantity2="ОКР(61*1,75+122*0,95; 0)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10133">
+        <Quantity1 Fx="61*1,75+122*0,95" Precision="0" Result="223"/>
+        <PriceBase PZ="17,75" EM="17,75"/>
+      </Position>
+      <Position Caption="Ремонт и содержание грунтовых землевозных дорог на каждые 0,5 км длины, группа грунтов: 1" Number="45" Code="ТЕР01-01-015-01" Units="1000 м3 грунта" SysID="617" Quantity2="ОКР((61+122)/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="(61+122)/1000" KUnit="1000" Precision="3" Result="0,183"/>
+        <PriceBase PZ="262,21" EM="246,04" ZM="12,48" MT="16,17"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="0,99"/>
+          <Mch Caption="Автогрейдеры: среднего типа 99 кВт (135 л.с.)" Code="120202" Units="маш.час" Quantity2="0,99">
+            <PriceBase Value="248,53" ZM="12,61"/>
+          </Mch>
+          <Mat Caption="Щебень из природного камня для строительных работ марка: 800, фракция 20-40 мм" Code="408-0015" Units="м3" Quantity2="0,1">
+            <PriceBase Value="161,7"/>
+          </Mat>
+        </Resources>
+        <Koefficients>
+          <K Options="Base Curr PzAll EmAll MatQty EmQty OzpTz ZpmTz" Value_PZ="12" Level="1"/>
+        </Koefficients>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Ремонт и содержание дороги от забоя до отвала при транспортировке грунта автомобилями-самосвалами, полуприцепами-самосвалами или думперами."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Работа на отвале, группа грунтов: 1" Number="46" Code="ТЕР01-01-016-01" Units="1000 м3 грунта" SysID="618" Quantity2="ОКР((61+122)/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="(61+122)/1000" KUnit="1000" Precision="3" Result="0,183"/>
+        <PriceBase PZ="474,22" OZ="22,78" EM="448,21" ZM="43,94" MT="3,23"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-2-0" Units="чел.час" Quantity2="2,99" WorkClass="2">
+            <PriceBase Value="7,62"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="3,26"/>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070149" Units="маш.час" Quantity2="3,26">
+            <PriceBase Value="134,09" ZM="13,48"/>
+          </Mch>
+          <Mch Caption="Автомобиль-самосвал, грузоподъемность: до 7 т" Code="400051" Units="маш.час" Quantity2="0,07" Attribs="Deleted">
+            <PriceBase Value="158,25"/>
+          </Mch>
+          <Mat Caption="Щебень из природного камня для строительных работ марка: 800, фракция 20-40 мм" Code="408-0015" Units="м3" Quantity2="0,02" Attribs="Deleted">
+            <PriceBase Value="161,7"/>
+          </Mat>
+        </Resources>
+        <WorksList>
+          <Work Caption="Перемещение и разравнивание выгруженного грунта из автомобилей-самосвалов."/>
+          <Work Caption="Содержание проездов на отвале."/>
+          <Work Caption="Очистка кузовов автомобилей-самосвалов при их выгрузке."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Укрепление откосов земляных сооружений посевом многолетних трав: механизированным способом" Number="47" Code="ТЕР01-02-040-02" Units="100 м2" SysID="574" Quantity2="ОКР(3610/100; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10004">
+        <Quantity1 Fx="3610/100" KUnit="100" Precision="3" Result="36,1"/>
+        <PriceBase PZ="2161,32" EM="414,61" ZM="32,16" MT="1746,71"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="2,55"/>
+          <Mch Caption="Экскаваторы одноковшовые дизельные на гусеничном ходу при работе на других видах строительства: 0,65 м3" Code="060248" Units="маш.час" Quantity2="2,48">
+            <PriceBase Value="148,98" ZM="12,61"/>
+          </Mch>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 59 кВт (80 л.с.)" Code="070148" Units="маш.час" Quantity2="0,07">
+            <PriceBase Value="115,1" ZM="12,61"/>
+          </Mch>
+          <Mch Caption="Агрегаты для травосеяния на откосах автомобильных и железных дорог" Code="130300" Units="маш.час" Quantity2="0,43">
+            <PriceBase Value="86,24"/>
+          </Mch>
+          <Mat Caption="Семена трав" Code="414-9260" Units="кг" Quantity2="2,7" Options="NotCount"/>
+          <Mat Caption="Удобрения: сложно-смешанные гранулированные насыпью" Code="114-0021" Units="т" Quantity2="0,0034">
+            <PriceBase Value="1399,91"/>
+          </Mat>
+          <Mat Caption="Земля растительная" Code="407-0014" Units="м3" Quantity2="15,8" Attribs="Deleted">
+            <PriceBase Value="110,25"/>
+          </Mat>
+        </Resources>
+        <WorksList>
+          <Work Caption="Исправление откоса и нарезка борозд."/>
+          <Work Caption="Подсыпка растительной земли по откосу."/>
+          <Work Caption="Посев трав."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Семена газонных трав (смесь)" Number="48" Code="ТСЦ-414-0137" Units="кг" SysID="575" Quantity2="ОКР(2,7*3610/100; 0)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10004">
+        <Quantity1 Fx="2,7*3610/100" Precision="0" Result="97"/>
+        <PriceBase PZ="61,56" MT="61,56"/>
+      </Position>
+    </Chapter>
+    <Chapter Caption="Природоохранные   мероприятия" SysID="4">
+      <Header Caption="Устройство  обвалования на досыпной части кустовой площадки"/>
+      <Position Caption="Разработка грунта с перемещением грунта до 10 м бульдозерами мощностью: 340 кВт (450 л.с.), группа грунтов 2" Number="49" Code="ТЕР01-01-086-06" Units="1000 м3 грунта" SysID="438" Quantity2="ОКР(259*0,3/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="259*0,3/1000" KUnit="1000" Precision="3" Result="0,078"/>
+        <PriceBase PZ="1001,4" EM="1001,4" ZM="31,25"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="1,87"/>
+          <Mch Caption="Бульдозеры при работе на сооружении магистральных трубопроводов: 340 кВт (450 л.c.)" Code="070122" Units="маш.час" Quantity2="1,87">
+            <PriceBase Value="535,51" ZM="16,71"/>
+          </Mch>
+        </Resources>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта с перемещением."/>
+        </WorksList>
+      </Position>
+      <Position Caption="При перемещении грунта на каждые последующие 10 м добавлять: к расценке 01-01-086-06" Number="50" Code="ТЕР01-01-086-14" Units="1000 м3 грунта" SysID="439" Quantity2="ОКР(259*0,3/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="259*0,3/1000" KUnit="1000" Precision="3" Result="0,078"/>
+        <PriceBase PZ="765,78" EM="765,78" ZM="23,9"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="1,43"/>
+          <Mch Caption="Бульдозеры при работе на сооружении магистральных трубопроводов: 340 кВт (450 л.c.)" Code="070122" Units="маш.час" Quantity2="1,43">
+            <PriceBase Value="535,51" ZM="16,71"/>
+          </Mch>
+        </Resources>
+        <Koefficients>
+          <K Options="Base Curr PzAll EmAll MatQty EmQty OzpTz ZpmTz" Value_PZ="3" Level="3"/>
+        </Koefficients>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта с перемещением."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Разработка грунта с погрузкой в автомобили-самосвалы экскаваторами типа &quot;ATLAS&quot;, &quot;VOLVO&quot;, &quot;KOMATSU&quot;, &quot;HITACHI&quot;, &quot;LIEBHER&quot; с ковшом вместимостью 1,6 (1,25-1,6) м3, группа грунтов: 1" Number="51" Code="ТЕР01-01-012-25" Units="1000 м3 грунта" SysID="440" Quantity2="ОКР(259/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="Comment TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="259/1000" KUnit="1000" Precision="3" Result="0,259"/>
+        <PriceBase PZ="4405,34" OZ="25,98" EM="4379,36" ZM="211,57"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-2-0" Units="чел.час" Quantity2="3,41" WorkClass="2">
+            <PriceBase Value="7,62"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="16,15"/>
+          <Mch Caption="Экскаваторы на гусеничном ходу импортного производства типа «ATLAS», «VOLVO», «KOMATSU», «HITACHI», «LIEBHER» с емкостью ковша: 1,6 м3" Code="060259" Units="маш.час" Quantity2="6,99">
+            <PriceBase Value="584,89" ZM="26,09"/>
+          </Mch>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070149" Units="маш.час" Quantity2="2,17">
+            <PriceBase Value="134,09" ZM="13,48"/>
+          </Mch>
+          <Mat Caption="Щебень" Code="408-9080" Units="м3" Quantity2="0,1" Options="NotCount"/>
+        </Resources>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта экскаваторами с погрузкой на автомобили-самосвалы."/>
+          <Work Caption="Планировка поверхности забоя и земляного полотна забойной дороги бульдозером."/>
+          <Work Caption="Содержание забойной дороги."/>
+          <Work Caption="Вспомогательные работы, выполняемые вручную, связанные с устройством водоотводных канав или ограждающих валиков, с переходом экскаватора с одного места на другое и из забоя в забой и т.д."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Стоимость песчаного грунта" Number="52" Code="Данные  заказчика" Units="м3" SysID="419" Quantity2="ОКР(259; 3)" PriceLevel="2001" PzSync="Yes" Vr2001="10091">
+        <Quantity1 Fx="259" Precision="3" Result="259"/>
+        <PriceBase PZ="29,54"/>
+        <ExcludedKfs Value="(0)"/>
+      </Position>
+      <Position Caption="Перевозка грузов автомобилями-самосвалами грузоподъемностью 10 т работающих вне карьера: расстояние перевозки до 14 км;нормативное время пробега 1,223 час;класс груза 1" Number="53" Code="ТСЦпг310-3014-1" Units="1т" SysID="420" Quantity2="ОКР(259*1,75; 0)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10133">
+        <Quantity1 Fx="259*1,75" Precision="0" Result="453"/>
+        <PriceBase PZ="26,32" EM="26,32"/>
+      </Position>
+      <Position Caption="Ремонт и содержание грунтовых землевозных дорог на каждые 0,5 км длины, группа грунтов: 1" Number="54" Code="ТЕР01-01-015-01" Units="1000 м3 грунта" SysID="421" Quantity2="ОКР(259/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="259/1000" KUnit="1000" Precision="3" Result="0,259"/>
+        <PriceBase PZ="262,21" EM="246,04" ZM="12,48" MT="16,17"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="0,99"/>
+          <Mch Caption="Автогрейдеры: среднего типа 99 кВт (135 л.с.)" Code="120202" Units="маш.час" Quantity2="0,99">
+            <PriceBase Value="248,53" ZM="12,61"/>
+          </Mch>
+          <Mat Caption="Щебень из природного камня для строительных работ марка: 800, фракция 20-40 мм" Code="408-0015" Units="м3" Quantity2="0,1">
+            <PriceBase Value="161,7"/>
+          </Mat>
+        </Resources>
+        <Koefficients>
+          <K Options="Base Curr PzAll EmAll MatQty EmQty OzpTz ZpmTz" Value_PZ="28" Level="1"/>
+        </Koefficients>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Ремонт и содержание дороги от забоя до отвала при транспортировке грунта автомобилями-самосвалами, полуприцепами-самосвалами или думперами."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Работа на отвале, группа грунтов: 2-3" Number="55" Code="ТЕР01-01-016-02" Units="1000 м3 грунта" SysID="76" Quantity2="ОКР(259/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="259/1000" KUnit="1000" Precision="3" Result="0,259"/>
+        <PriceBase PZ="579,28" OZ="27,81" EM="545" ZM="53,52" MT="6,47"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-2-0" Units="чел.час" Quantity2="3,65" WorkClass="2">
+            <PriceBase Value="7,62"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="3,97"/>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070149" Units="маш.час" Quantity2="3,97">
+            <PriceBase Value="134,09" ZM="13,48"/>
+          </Mch>
+          <Mch Caption="Автомобиль-самосвал, грузоподъемность: до 7 т" Code="400051" Units="маш.час" Quantity2="0,08" Attribs="Deleted">
+            <PriceBase Value="158,25"/>
+          </Mch>
+          <Mat Caption="Щебень из природного камня для строительных работ марка: 800, фракция 20-40 мм" Code="408-0015" Units="м3" Quantity2="0,04" Attribs="Deleted">
+            <PriceBase Value="161,7"/>
+          </Mat>
+        </Resources>
+        <WorksList>
+          <Work Caption="Перемещение и разравнивание выгруженного грунта из автомобилей-самосвалов."/>
+          <Work Caption="Содержание проездов на отвале."/>
+          <Work Caption="Очистка кузовов автомобилей-самосвалов при их выгрузке."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Планировка откосов и полотна: насыпей механизированным способом, группа грунтов 2" Number="56" Code="ТЕР01-02-027-12" Units="1000 м2 спланированной площади" SysID="77" Quantity2="ОКР(526/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10004">
+        <Quantity1 Fx="526/1000" KUnit="1000" Precision="3" Result="0,526"/>
+        <PriceBase PZ="825,48" OZ="240,6" EM="584,88" ZM="36,54"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-1-8" Units="чел.час" Quantity2="32,08" WorkClass="1,8">
+            <PriceBase Value="7,5"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="2,87"/>
+          <Mch Caption="Экскаваторы одноковшовые дизельные на гусеничном ходу при работе на других видах строительства: 0,65 м3" Code="060248" Units="маш.час" Quantity2="0,83">
+            <PriceBase Value="148,98" ZM="12,61"/>
+          </Mch>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070149" Units="маш.час" Quantity2="0,4">
+            <PriceBase Value="134,09" ZM="13,48"/>
+          </Mch>
+          <Mch Caption="Автогрейдеры: среднего типа 99 кВт (135 л.с.)" Code="120202" Units="маш.час" Quantity2="1,64">
+            <PriceBase Value="248,53" ZM="12,61"/>
+          </Mch>
+        </Resources>
+        <WorksList>
+          <Work Caption="Планировка поверхности со срезкой неровностей."/>
+          <Work Caption="Засыпка углублений, уплотнение грунта, зачистка поверхности и проверка шаблоном."/>
+          <Work Caption="Планировка основной площадки полотна."/>
+          <Work Caption="Устройство сливной призмы и зачистка неровностей."/>
+          <Work Caption="Планировка откосов срезкой."/>
+          <Work Caption="Разравнивание грунта и планировка естественной бермы."/>
+        </WorksList>
+      </Position>
+      <Header Caption="Укрепление поверхности обвалования материалом &quot;Геомат МТД1-15(300)"/>
+      <Position Caption="Устройство прослойки из нетканого синтетического материала (НСМ) при укреплении откосов: неподтопляемой (укрепление поверхности обвалования)" Number="57" Code="ТЕР27-04-016-06" Units="1000 м2 поверхности" SysID="533" Quantity2="ОКР(526/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10031">
+        <Quantity1 Fx="526/1000" KUnit="1000" Precision="3" Result="0,526"/>
+        <PriceBase PZ="298,34" OZ="251,42" EM="26,15" MT="20,77"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-2-2" Units="чел.час" Quantity2="32,4" WorkClass="2,2">
+            <PriceBase Value="7,76"/>
+          </Tzr>
+          <Mch Caption="Автомобили бортовые, грузоподъемность: до 5 т" Code="400001" Units="маш.час" Quantity2="0,2">
+            <PriceBase Value="130,74"/>
+          </Mch>
+          <Mat Caption="Полотно иглопробивное для дорожного строительства: «Дорнит-2»" Code="101-0792" Units="10 м2" Options="Project NotCount ExclFromQty">
+            <PriceBase Value="172,2"/>
+          </Mat>
+          <Mat Caption="Поковки из квадратных заготовок, масса: 1,8 кг" Code="101-0782" Units="т" Quantity2="0,0023" Attribs="Deleted">
+            <PriceBase Value="9030"/>
+          </Mat>
+        </Resources>
+        <WorksList>
+          <Work Caption="Раскладка рулонов НСМ."/>
+          <Work Caption="Закрепление полотен НСМ анкерами с последующей разборкой крепления."/>
+          <Work Caption="Склейка полотен НСМ."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Геомат МТД1-15(300)" Number="58" Code="Прайс ООО &quot;Стандартпарк Урал&quot; от 15.10.2015г" Units="м2" SysID="641" Quantity2="565" PriceLevel="2001" PzSync="Yes" Vr2001="10031">
+        <Quantity1 Fx="565" Result="565"/>
+        <PriceBase PZ="52,98" MT="52,98">
+          <Fx MT="405/1,18/7,32*1,13"/>
+        </PriceBase>
+      </Position>
+      <Position Caption="Горячекатаная арматурная сталь гладкая класса А-I, диаметром: 6 мм" Number="59" Code="ТСЦ-204-0001" Units="т" SysID="534" Quantity2="ОКР(1052*0,3*0,154*0,001; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10031">
+        <Quantity1 Fx="1052*0,3*0,154*0,001" Precision="3" Result="0,049"/>
+        <PriceBase PZ="5615,78" MT="5615,78"/>
+      </Position>
+      <Header Caption="Укрепление обвалования посевом трав"/>
+      <Position Caption="Разработка грунта с перемещением грунта до 10 м бульдозерами мощностью: 340 кВт (450 л.с.), группа грунтов 2" Number="60" Code="ТЕР01-01-086-06" Units="1000 м3 грунта" SysID="620" Quantity2="ОКР((526*0,05/3*0,3*1,01)/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="(526*0,05/3*0,3*1,01)/1000" KUnit="1000" Precision="3" Result="0,003"/>
+        <PriceBase PZ="1001,4" EM="1001,4" ZM="31,25"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="1,87"/>
+          <Mch Caption="Бульдозеры при работе на сооружении магистральных трубопроводов: 340 кВт (450 л.c.)" Code="070122" Units="маш.час" Quantity2="1,87">
+            <PriceBase Value="535,51" ZM="16,71"/>
+          </Mch>
+        </Resources>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта с перемещением."/>
+        </WorksList>
+      </Position>
+      <Position Caption="При перемещении грунта на каждые последующие 10 м добавлять: к расценке 01-01-086-06" Number="61" Code="ТЕР01-01-086-14" Units="1000 м3 грунта" SysID="621" Quantity2="ОКР((526*0,05/3*0,3*1,01)/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="(526*0,05/3*0,3*1,01)/1000" KUnit="1000" Precision="3" Result="0,003"/>
+        <PriceBase PZ="765,78" EM="765,78" ZM="23,9"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="1,43"/>
+          <Mch Caption="Бульдозеры при работе на сооружении магистральных трубопроводов: 340 кВт (450 л.c.)" Code="070122" Units="маш.час" Quantity2="1,43">
+            <PriceBase Value="535,51" ZM="16,71"/>
+          </Mch>
+        </Resources>
+        <Koefficients>
+          <K Options="Base Curr PzAll EmAll MatQty EmQty OzpTz ZpmTz" Value_PZ="3" Level="3"/>
+        </Koefficients>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта с перемещением."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Разработка грунта с погрузкой в автомобили-самосвалы экскаваторами типа &quot;ATLAS&quot;, &quot;VOLVO&quot;, &quot;KOMATSU&quot;, &quot;HITACHI&quot;, &quot;LIEBHER&quot; с ковшом вместимостью 1,6 (1,25-1,6) м3, группа грунтов: 1" Number="62" Code="ТЕР01-01-012-25" Units="1000 м3 грунта" SysID="622" Quantity2="ОКР(526*0,05/3*1,01/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="Comment TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="526*0,05/3*1,01/1000" KUnit="1000" Precision="3" Result="0,009"/>
+        <PriceBase PZ="4405,34" OZ="25,98" EM="4379,36" ZM="211,57"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-2-0" Units="чел.час" Quantity2="3,41" WorkClass="2">
+            <PriceBase Value="7,62"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="16,15"/>
+          <Mch Caption="Экскаваторы на гусеничном ходу импортного производства типа «ATLAS», «VOLVO», «KOMATSU», «HITACHI», «LIEBHER» с емкостью ковша: 1,6 м3" Code="060259" Units="маш.час" Quantity2="6,99">
+            <PriceBase Value="584,89" ZM="26,09"/>
+          </Mch>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070149" Units="маш.час" Quantity2="2,17">
+            <PriceBase Value="134,09" ZM="13,48"/>
+          </Mch>
+          <Mat Caption="Щебень" Code="408-9080" Units="м3" Quantity2="0,1" Options="NotCount"/>
+        </Resources>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта экскаваторами с погрузкой на автомобили-самосвалы."/>
+          <Work Caption="Планировка поверхности забоя и земляного полотна забойной дороги бульдозером."/>
+          <Work Caption="Содержание забойной дороги."/>
+          <Work Caption="Вспомогательные работы, выполняемые вручную, связанные с устройством водоотводных канав или ограждающих валиков, с переходом экскаватора с одного места на другое и из забоя в забой и т.д."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Стоимость песчаного грунта" Number="63" Code="Данные  заказчика" Units="м3" SysID="623" Quantity2="ОКР(526*0,05/3*1,01; 0)" PriceLevel="2001" PzSync="Yes" Vr2001="10091">
+        <Quantity1 Fx="526*0,05/3*1,01" Precision="0" Result="9"/>
+        <PriceBase PZ="29,54"/>
+      </Position>
+      <Position Caption="Перевозка грузов автомобилями-самосвалами грузоподъемностью 10 т работающих вне карьера: расстояние перевозки до 16 км;нормативное время пробега 1,314 час;класс груза 1" Number="64" Code="ТСЦпг310-3016-1" Units="1т" SysID="624" Quantity2="ОКР(526*0,05/3*1,01*1,75; 0)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10133">
+        <Quantity1 Fx="526*0,05/3*1,01*1,75" Precision="0" Result="15"/>
+        <PriceBase PZ="28,28" EM="28,28"/>
+      </Position>
+      <Position Caption="Ремонт и содержание грунтовых землевозных дорог на каждые 0,5 км длины, группа грунтов: 1" Number="65" Code="ТЕР01-01-015-01" Units="1000 м3 грунта" SysID="625" Quantity2="ОКР(526*0,05/3*1,01/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="526*0,05/3*1,01/1000" KUnit="1000" Precision="3" Result="0,009"/>
+        <PriceBase PZ="262,21" EM="246,04" ZM="12,48" MT="16,17"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="0,99"/>
+          <Mch Caption="Автогрейдеры: среднего типа 99 кВт (135 л.с.)" Code="120202" Units="маш.час" Quantity2="0,99">
+            <PriceBase Value="248,53" ZM="12,61"/>
+          </Mch>
+          <Mat Caption="Щебень из природного камня для строительных работ марка: 800, фракция 20-40 мм" Code="408-0015" Units="м3" Quantity2="0,1">
+            <PriceBase Value="161,7"/>
+          </Mat>
+        </Resources>
+        <Koefficients>
+          <K Options="Base Curr PzAll EmAll MatQty EmQty OzpTz ZpmTz" Value_PZ="32" Level="1"/>
+        </Koefficients>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Ремонт и содержание дороги от забоя до отвала при транспортировке грунта автомобилями-самосвалами, полуприцепами-самосвалами или думперами."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Работа на отвале, группа грунтов: 2-3" Number="66" Code="ТЕР01-01-016-02" Units="1000 м3 грунта" SysID="626" Quantity2="ОКР(526*0,05/3*1,01/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="526*0,05/3*1,01/1000" KUnit="1000" Precision="3" Result="0,009"/>
+        <PriceBase PZ="579,28" OZ="27,81" EM="545" ZM="53,52" MT="6,47"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-2-0" Units="чел.час" Quantity2="3,65" WorkClass="2">
+            <PriceBase Value="7,62"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="3,97"/>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070149" Units="маш.час" Quantity2="3,97">
+            <PriceBase Value="134,09" ZM="13,48"/>
+          </Mch>
+          <Mch Caption="Автомобиль-самосвал, грузоподъемность: до 7 т" Code="400051" Units="маш.час" Quantity2="0,08" Attribs="Deleted">
+            <PriceBase Value="158,25"/>
+          </Mch>
+          <Mat Caption="Щебень из природного камня для строительных работ марка: 800, фракция 20-40 мм" Code="408-0015" Units="м3" Quantity2="0,04" Attribs="Deleted">
+            <PriceBase Value="161,7"/>
+          </Mat>
+        </Resources>
+        <WorksList>
+          <Work Caption="Перемещение и разравнивание выгруженного грунта из автомобилей-самосвалов."/>
+          <Work Caption="Содержание проездов на отвале."/>
+          <Work Caption="Очистка кузовов автомобилей-самосвалов при их выгрузке."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Разработка грунта с перемещением грунта до 10 м бульдозерами мощностью: 340 кВт (450 л.с.), группа грунтов 1" Number="67" Code="ТЕР01-01-086-05" Units="1000 м3 грунта" SysID="627" Quantity2="ОКР((526*0,05/3*2*1,01)/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="(526*0,05/3*2*1,01)/1000" KUnit="1000" Precision="3" Result="0,018"/>
+        <PriceBase PZ="942,5" EM="942,5" ZM="29,41"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="1,76"/>
+          <Mch Caption="Бульдозеры при работе на сооружении магистральных трубопроводов: 340 кВт (450 л.c.)" Code="070122" Units="маш.час" Quantity2="1,76">
+            <PriceBase Value="535,51" ZM="16,71"/>
+          </Mch>
+        </Resources>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта с перемещением."/>
+        </WorksList>
+      </Position>
+      <Position Caption="При перемещении грунта на каждые последующие 10 м добавлять: к расценке 01-01-086-05" Number="68" Code="ТЕР01-01-086-13" Units="1000 м3 грунта" SysID="628" Quantity2="ОКР((526*0,05/3*2*1,01)/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="(526*0,05/3*2*1,01)/1000" KUnit="1000" Precision="3" Result="0,018"/>
+        <PriceBase PZ="706,87" EM="706,87" ZM="22,06"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="1,32"/>
+          <Mch Caption="Бульдозеры при работе на сооружении магистральных трубопроводов: 340 кВт (450 л.c.)" Code="070122" Units="маш.час" Quantity2="1,32">
+            <PriceBase Value="535,51" ZM="16,71"/>
+          </Mch>
+        </Resources>
+        <Koefficients>
+          <K Options="Base Curr PzAll EmAll MatQty EmQty OzpTz ZpmTz" Value_PZ="3" Level="3"/>
+        </Koefficients>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта с перемещением."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Стоимость торфа" Number="69" Code="Данные  заказчика" Units="м3" SysID="629" Quantity2="ОКР(526*0,05/3*2*1,01; 0)" PriceLevel="2001" PzSync="Yes" Vr2001="10091">
+        <Quantity1 Fx="526*0,05/3*2*1,01" Precision="0" Result="18"/>
+        <PriceBase PZ="29,54"/>
+      </Position>
+      <Position Caption="Рыхление грунтов бульдозерами-рыхлителями мощностью: 79 кВт (108 л.с.), глубина рыхления до 0,35 м, длина разрыхляемого участка до 100 м" Number="70" Code="ТЕР01-02-032-01" Units="1000 м3 грунта" SysID="630" Quantity2="ОКР(526*0,05*1,01/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10004">
+        <Quantity1 Fx="526*0,05*1,01/1000" KUnit="1000" Precision="3" Result="0,027"/>
+        <PriceBase PZ="376,31" EM="376,31" ZM="29,93"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="2,22"/>
+          <Mch Caption="Бульдозеры-рыхлители на тракторе при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070223" Units="маш.час" Quantity2="2,22">
+            <PriceBase Value="169,51" ZM="13,48"/>
+          </Mch>
+        </Resources>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Рыхление плотных, твердых, полутвердых и слежавшихся грунтов с регулировкой глубины рыхления."/>
+          <Work Caption="Очистка рыхлителя от корней и налипающего грунта."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Разработка грунта с перемещением до 10 м бульдозерами мощностью: 96 кВт (130 л.с.), группа грунтов 1" Number="71" Code="ТЕР01-01-031-01" Units="1000 м3 грунта" SysID="631" Quantity2="ОКР(526*0,05*1,01/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="526*0,05*1,01/1000" KUnit="1000" Precision="3" Result="0,027"/>
+        <PriceBase PZ="1544,35" EM="1544,35" ZM="130,49"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="9,68"/>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 96 кВт (130 л.с.)" Code="070150" Units="маш.час" Quantity2="9,68">
+            <PriceBase Value="159,54" ZM="13,48"/>
+          </Mch>
+        </Resources>
+        <Koefficients>
+          <K Caption="3.76 При перемещении бульдозерами ранее разработанных разрыхленных грунтов, за исключением взорванной скальной породы, сыпучих барханных и дюнных песков" Options="Base Curr EmAll MatQty EmQty OzpTz ZpmTz" Value_EM="0,85" Level="1"/>
+        </Koefficients>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта с перемещением."/>
+        </WorksList>
+      </Position>
+      <Position Caption="При перемещении грунта на каждые последующие 10 м добавлять: к расценке 01-01-031-01" Number="72" Code="ТЕР01-01-031-09" Units="1000 м3 грунта" SysID="632" Quantity2="ОКР(526*0,05*1,01/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="526*0,05*1,01/1000" KUnit="1000" Precision="3" Result="0,027"/>
+        <PriceBase PZ="1298,66" EM="1298,66" ZM="109,73"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="8,14"/>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 96 кВт (130 л.с.)" Code="070150" Units="маш.час" Quantity2="8,14">
+            <PriceBase Value="159,54" ZM="13,48"/>
+          </Mch>
+        </Resources>
+        <Koefficients>
+          <K Options="Base Curr PzAll EmAll MatQty EmQty OzpTz ZpmTz" Value_PZ="4" Level="3"/>
+        </Koefficients>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта с перемещением."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Разработка грунта с погрузкой в автомобили-самосвалы экскаваторами типа &quot;ATLAS&quot;, &quot;VOLVO&quot;, &quot;KOMATSU&quot;, &quot;HITACHI&quot;, &quot;LIEBHER&quot; с ковшом вместимостью 1,6 (1,25-1,6) м3, группа грунтов: 1" Number="73" Code="ТЕР01-01-012-25" Units="1000 м3 грунта" SysID="633" Quantity2="ОКР(526*0,05*1,01/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="Comment TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="526*0,05*1,01/1000" KUnit="1000" Precision="3" Result="0,027"/>
+        <PriceBase PZ="4405,34" OZ="25,98" EM="4379,36" ZM="211,57"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-2-0" Units="чел.час" Quantity2="3,41" WorkClass="2">
+            <PriceBase Value="7,62"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="16,15"/>
+          <Mch Caption="Экскаваторы на гусеничном ходу импортного производства типа «ATLAS», «VOLVO», «KOMATSU», «HITACHI», «LIEBHER» с емкостью ковша: 1,6 м3" Code="060259" Units="маш.час" Quantity2="6,99">
+            <PriceBase Value="584,89" ZM="26,09"/>
+          </Mch>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070149" Units="маш.час" Quantity2="2,17">
+            <PriceBase Value="134,09" ZM="13,48"/>
+          </Mch>
+          <Mat Caption="Щебень" Code="408-9080" Units="м3" Quantity2="0,1" Options="NotCount ExclFromQty"/>
+        </Resources>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Разработка грунта экскаваторами с погрузкой на автомобили-самосвалы."/>
+          <Work Caption="Планировка поверхности забоя и земляного полотна забойной дороги бульдозером."/>
+          <Work Caption="Содержание забойной дороги."/>
+          <Work Caption="Вспомогательные работы, выполняемые вручную, связанные с устройством водоотводных канав или ограждающих валиков, с переходом экскаватора с одного места на другое и из забоя в забой и т.д."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Перевозка грузов автомобилями-самосвалами грузоподъемностью 10 т работающих вне карьера: расстояние перевозки до 6 км;нормативное время пробега 0,701 час;класс груза 2" Number="74" Code="ТСЦпг310-3006-2" Units="1т" SysID="639" Quantity2="ОКР(9*1,75+18*0,95; 0)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10133">
+        <Quantity1 Fx="9*1,75+18*0,95" Precision="0" Result="33"/>
+        <PriceBase PZ="17,75" EM="17,75"/>
+      </Position>
+      <Position Caption="Ремонт и содержание грунтовых землевозных дорог на каждые 0,5 км длины, группа грунтов: 1" Number="75" Code="ТЕР01-01-015-01" Units="1000 м3 грунта" SysID="635" Quantity2="ОКР(526*0,05*1,01/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="526*0,05*1,01/1000" KUnit="1000" Precision="3" Result="0,027"/>
+        <PriceBase PZ="262,21" EM="246,04" ZM="12,48" MT="16,17"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="0,99"/>
+          <Mch Caption="Автогрейдеры: среднего типа 99 кВт (135 л.с.)" Code="120202" Units="маш.час" Quantity2="0,99">
+            <PriceBase Value="248,53" ZM="12,61"/>
+          </Mch>
+          <Mat Caption="Щебень из природного камня для строительных работ марка: 800, фракция 20-40 мм" Code="408-0015" Units="м3" Quantity2="0,1">
+            <PriceBase Value="161,7"/>
+          </Mat>
+        </Resources>
+        <Koefficients>
+          <K Options="Base Curr PzAll EmAll MatQty EmQty OzpTz ZpmTz" Value_PZ="12" Level="1"/>
+        </Koefficients>
+        <ExcludedKfs Value="(1)"/>
+        <WorksList>
+          <Work Caption="Ремонт и содержание дороги от забоя до отвала при транспортировке грунта автомобилями-самосвалами, полуприцепами-самосвалами или думперами."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Работа на отвале, группа грунтов: 1" Number="76" Code="ТЕР01-01-016-01" Units="1000 м3 грунта" SysID="636" Quantity2="ОКР(526*0,05*1,01/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10001">
+        <Quantity1 Fx="526*0,05*1,01/1000" KUnit="1000" Precision="3" Result="0,027"/>
+        <PriceBase PZ="474,22" OZ="22,78" EM="448,21" ZM="43,94" MT="3,23"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-2-0" Units="чел.час" Quantity2="2,99" WorkClass="2">
+            <PriceBase Value="7,62"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="3,26"/>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070149" Units="маш.час" Quantity2="3,26">
+            <PriceBase Value="134,09" ZM="13,48"/>
+          </Mch>
+          <Mch Caption="Автомобиль-самосвал, грузоподъемность: до 7 т" Code="400051" Units="маш.час" Quantity2="0,07" Attribs="Deleted">
+            <PriceBase Value="158,25"/>
+          </Mch>
+          <Mat Caption="Щебень из природного камня для строительных работ марка: 800, фракция 20-40 мм" Code="408-0015" Units="м3" Quantity2="0,02" Attribs="Deleted">
+            <PriceBase Value="161,7"/>
+          </Mat>
+        </Resources>
+        <WorksList>
+          <Work Caption="Перемещение и разравнивание выгруженного грунта из автомобилей-самосвалов."/>
+          <Work Caption="Содержание проездов на отвале."/>
+          <Work Caption="Очистка кузовов автомобилей-самосвалов при их выгрузке."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Укрепление откосов земляных сооружений посевом многолетних трав: механизированным способом" Number="77" Code="ТЕР01-02-040-02" Units="100 м2" SysID="553" Quantity2="ОКР(526/100; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10004">
+        <Quantity1 Fx="526/100" KUnit="100" Precision="3" Result="5,26"/>
+        <PriceBase PZ="2161,32" EM="414,61" ZM="32,16" MT="1746,71"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="2,55"/>
+          <Mch Caption="Экскаваторы одноковшовые дизельные на гусеничном ходу при работе на других видах строительства: 0,65 м3" Code="060248" Units="маш.час" Quantity2="2,48">
+            <PriceBase Value="148,98" ZM="12,61"/>
+          </Mch>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 59 кВт (80 л.с.)" Code="070148" Units="маш.час" Quantity2="0,07">
+            <PriceBase Value="115,1" ZM="12,61"/>
+          </Mch>
+          <Mch Caption="Агрегаты для травосеяния на откосах автомобильных и железных дорог" Code="130300" Units="маш.час" Quantity2="0,43">
+            <PriceBase Value="86,24"/>
+          </Mch>
+          <Mat Caption="Семена трав" Code="414-9260" Units="кг" Quantity2="2,7" Options="NotCount"/>
+          <Mat Caption="Удобрения: сложно-смешанные гранулированные насыпью" Code="114-0021" Units="т" Quantity2="0,0034">
+            <PriceBase Value="1399,91"/>
+          </Mat>
+          <Mat Caption="Земля растительная" Code="407-0014" Units="м3" Quantity2="15,8" Attribs="Deleted">
+            <PriceBase Value="110,25"/>
+          </Mat>
+        </Resources>
+        <WorksList>
+          <Work Caption="Исправление откоса и нарезка борозд."/>
+          <Work Caption="Подсыпка растительной земли по откосу."/>
+          <Work Caption="Посев трав."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Семена газонных трав (смесь)" Number="78" Code="ТСЦ-414-0137" Units="кг" SysID="554" Quantity2="ОКР(2,7*526/100; 0)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" PzSync="Yes" Vr2001="10004">
+        <Quantity1 Fx="2,7*526/100" Precision="0" Result="14"/>
+        <PriceBase PZ="61,56" MT="61,56"/>
+      </Position>
+    </Chapter>
+    <Chapter Caption="Устройство  покрытия внутриполошадочных проездов" SysID="5">
+      <Header Caption="Устройство покрытия из щебня"/>
+      <Position Caption="Устройство покрытий толщиной 15 см при укатке щебня с пределом прочности на сжатие свыше 68,6 до 98,1 МПа (свыше 700 до 1000 кгc/см2): нижнего слоя двухслойных" Number="79" Code="ТЕР27-04-013-03" Units="1000 м2 покрытия" SysID="89" Quantity2="ОКР(558/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10031">
+        <Quantity1 Fx="558/1000" KUnit="1000" Precision="3" Result="0,558"/>
+        <PriceBase PZ="32506,44" OZ="246,31" EM="3900,64" ZM="361,43" MT="28359,49"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-2-1" Units="чел.час" Quantity2="32,03" WorkClass="2,1">
+            <PriceBase Value="7,69"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="29,92"/>
+          <Mch Caption="Автопогрузчики 5 т" Code="030101" Units="маш.час" Quantity2="3,69">
+            <PriceBase Value="97,42" ZM="9,39"/>
+          </Mch>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070149" Units="маш.час" Quantity2="2,59">
+            <PriceBase Value="134,09" ZM="13,48"/>
+          </Mch>
+          <Mch Caption="Автогрейдеры: среднего типа 99 кВт (135 л.с.)" Code="120202" Units="маш.час" Quantity2="0,41">
+            <PriceBase Value="248,53" ZM="12,61"/>
+          </Mch>
+          <Mch Caption="Катки дорожные самоходные гладкие: 8 т" Code="120906" Units="маш.час" Quantity2="6,54">
+            <PriceBase Value="109,2" ZM="10,82"/>
+          </Mch>
+          <Mch Caption="Катки дорожные самоходные гладкие: 13 т" Code="120907" Units="маш.час" Quantity2="13,34">
+            <PriceBase Value="128,84" ZM="13,48"/>
+          </Mch>
+          <Mch Caption="Машины поливомоечные 6000 л" Code="121601" Units="маш.час" Quantity2="3,35">
+            <PriceBase Value="196,74" ZM="10,82"/>
+          </Mch>
+          <Mat Caption="Щебень из природного камня для строительных работ марка: 800, фракция 40-70 мм" Code="408-0016" Units="м3" Quantity2="189">
+            <PriceBase Value="149,81"/>
+          </Mat>
+          <Mat Caption="Вода" Code="411-0001" Units="м3" Quantity2="20">
+            <PriceBase Value="2,27"/>
+          </Mat>
+        </Resources>
+        <WorksList>
+          <Work Caption="Россыпь и разравнивание щебня."/>
+          <Work Caption="Профилирование и планировка щебня."/>
+          <Work Caption="Укатка щебня с поливкой водой."/>
+          <Work Caption="Уход за покрытием."/>
+        </WorksList>
+      </Position>
+      <Position Caption="Устройство покрытий толщиной 15 см при укатке щебня с пределом прочности на сжатие свыше 68,6 до 98,1 МПа (свыше 700 до 1000 кгc/см2): верхнего слоя двухслойных" Number="80" Code="ТЕР27-04-013-02" Units="1000 м2 покрытия" SysID="91" Quantity2="ОКР(521/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10031">
+        <Quantity1 Fx="521/1000" KUnit="1000" Precision="3" Result="0,521"/>
+        <PriceBase PZ="39780,29" OZ="446,11" EM="5903,59" ZM="536,23" MT="33430,59"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-2-7" Units="чел.час" Quantity2="54,94" WorkClass="2,7">
+            <PriceBase Value="8,12"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="45,29"/>
+          <Mch Caption="Автопогрузчики 5 т" Code="030101" Units="маш.час" Quantity2="8,35">
+            <PriceBase Value="97,42" ZM="9,39"/>
+          </Mch>
+          <Mch Caption="Автогрейдеры: среднего типа 99 кВт (135 л.с.)" Code="120202" Units="маш.час" Quantity2="1,82">
+            <PriceBase Value="248,53" ZM="12,61"/>
+          </Mch>
+          <Mch Caption="Катки дорожные самоходные гладкие: 8 т" Code="120906" Units="маш.час" Quantity2="9,7">
+            <PriceBase Value="109,2" ZM="10,82"/>
+          </Mch>
+          <Mch Caption="Катки дорожные самоходные гладкие: 13 т" Code="120907" Units="маш.час" Quantity2="19,72">
+            <PriceBase Value="128,84" ZM="13,48"/>
+          </Mch>
+          <Mch Caption="Машины поливомоечные 6000 л" Code="121601" Units="маш.час" Quantity2="4,45">
+            <PriceBase Value="196,74" ZM="10,82"/>
+          </Mch>
+          <Mch Caption="Распределители: каменной мелочи" Code="121803" Units="маш.час" Quantity2="1,25">
+            <PriceBase Value="129,88" ZM="12,61"/>
+          </Mch>
+          <Mat Caption="Щебень из природного камня для строительных работ марка: 800, фракция 5(3)-10 мм" Code="408-0013" Units="м3" Quantity2="10">
+            <PriceBase Value="221,34"/>
+          </Mat>
+          <Mat Caption="Щебень из природного камня для строительных работ марка: 800, фракция 10-20 мм" Code="408-0014" Units="м3" Quantity2="15">
+            <PriceBase Value="189"/>
+          </Mat>
+          <Mat Caption="Щебень из природного камня для строительных работ марка: 800, фракция 40-70 мм" Code="408-0016" Units="м3" Quantity2="189">
+            <PriceBase Value="149,81"/>
+          </Mat>
+          <Mat Caption="Вода" Code="411-0001" Units="м3" Quantity2="30">
+            <PriceBase Value="2,27"/>
+          </Mat>
+        </Resources>
+        <WorksList>
+          <Work Caption="Россыпь и разравнивание щебня."/>
+          <Work Caption="Профилирование и планировка щебня."/>
+          <Work Caption="Укатка щебня с поливкой водой."/>
+          <Work Caption="Уход за покрытием."/>
+        </WorksList>
+      </Position>
+      <Header Caption="Покрытие тротуаров щебнем"/>
+      <Position Caption="Устройство покрытий толщиной 15 см при укатке щебня с пределом прочности на сжатие свыше 68,6 до 98,1 МПа (свыше 700 до 1000 кгc/см2): однослойных" Number="81" Code="ТЕР27-04-013-01" Units="1000 м2 покрытия" SysID="555" Quantity2="ОКР(9/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10031">
+        <Quantity1 Fx="9/1000" KUnit="1000" Precision="3" Result="0,009"/>
+        <PriceBase PZ="39648,96" OZ="450,17" EM="5790,9" ZM="555,71" MT="33407,89"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-2-7" Units="чел.час" Quantity2="55,44" WorkClass="2,7">
+            <PriceBase Value="8,12"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="45,18"/>
+          <Mch Caption="Автопогрузчики 5 т" Code="030101" Units="маш.час" Quantity2="4,17">
+            <PriceBase Value="97,42" ZM="9,39"/>
+          </Mch>
+          <Mch Caption="Бульдозеры при работе на других видах строительства: 79 кВт (108 л.с.)" Code="070149" Units="маш.час" Quantity2="2,59">
+            <PriceBase Value="134,09" ZM="13,48"/>
+          </Mch>
+          <Mch Caption="Автогрейдеры: среднего типа 99 кВт (135 л.с.)" Code="120202" Units="маш.час" Quantity2="0,41">
+            <PriceBase Value="248,53" ZM="12,61"/>
+          </Mch>
+          <Mch Caption="Катки дорожные самоходные гладкие: 8 т" Code="120906" Units="маш.час" Quantity2="9,7">
+            <PriceBase Value="109,2" ZM="10,82"/>
+          </Mch>
+          <Mch Caption="Катки дорожные самоходные гладкие: 13 т" Code="120907" Units="маш.час" Quantity2="23,71">
+            <PriceBase Value="128,84" ZM="13,48"/>
+          </Mch>
+          <Mch Caption="Машины поливомоечные 6000 л" Code="121601" Units="маш.час" Quantity2="3,35">
+            <PriceBase Value="196,74" ZM="10,82"/>
+          </Mch>
+          <Mch Caption="Распределители: каменной мелочи" Code="121803" Units="маш.час" Quantity2="1,25">
+            <PriceBase Value="129,88" ZM="12,61"/>
+          </Mch>
+          <Mat Caption="Щебень из природного камня для строительных работ марка: 800, фракция 5(3)-10 мм" Code="408-0013" Units="м3" Quantity2="10">
+            <PriceBase Value="221,34"/>
+          </Mat>
+          <Mat Caption="Щебень из природного камня для строительных работ марка: 800, фракция 10-20 мм" Code="408-0014" Units="м3" Quantity2="15">
+            <PriceBase Value="189"/>
+          </Mat>
+          <Mat Caption="Щебень из природного камня для строительных работ марка: 800, фракция 40-70 мм" Code="408-0016" Units="м3" Quantity2="189">
+            <PriceBase Value="149,81"/>
+          </Mat>
+          <Mat Caption="Вода" Code="411-0001" Units="м3" Quantity2="20">
+            <PriceBase Value="2,27"/>
+          </Mat>
+        </Resources>
+        <WorksList>
+          <Work Caption="Россыпь и разравнивание щебня."/>
+          <Work Caption="Профилирование и планировка щебня."/>
+          <Work Caption="Укатка щебня с поливкой водой."/>
+          <Work Caption="Уход за покрытием."/>
+        </WorksList>
+      </Position>
+      <Position Caption="На каждый 1 см изменения толщины слоя добавлять или исключать к расценкам 27-04-013-01, 27-04-013-02, 27-04-013-03" Number="82" Code="ТЕР27-04-013-04" Units="1000 м2 покрытия" SysID="556" Quantity2="ОКР(9/1000; 3)" PriceLevel="2001" DBComment="Пост. Правит.ЯНАО от 13.10.11 №755-п" DBFlags="TechK" PzSync="Yes" Vr2001="10031">
+        <Quantity1 Fx="9/1000" KUnit="1000" Precision="3" Result="0,009"/>
+        <PriceBase PZ="2168,03" EM="280,42" ZM="28,16" MT="1887,61"/>
+        <Resources>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.час" Quantity2="2,51"/>
+          <Mch Caption="Автопогрузчики 5 т" Code="030101" Units="маш.час" Quantity2="0,83">
+            <PriceBase Value="97,42" ZM="9,39"/>
+          </Mch>
+          <Mch Caption="Катки дорожные самоходные гладкие: 8 т" Code="120906" Units="маш.час" Quantity2="0,86">
+            <PriceBase Value="109,2" ZM="10,82"/>
+          </Mch>
+          <Mch Caption="Катки дорожные самоходные гладкие: 13 т" Code="120907" Units="маш.час" Quantity2="0,82">
+            <PriceBase Value="128,84" ZM="13,48"/>
+          </Mch>
+          <Mat Caption="Щебень из природного камня для строительных работ марка: 800, фракция 40-70 мм" Code="408-0016" Units="м3" Quantity2="12,6">
+            <PriceBase Value="149,81"/>
+          </Mat>
+        </Resources>
+        <Koefficients>
+          <K Options="Base Curr PzAll EmAll MatQty EmQty OzpTz ZpmTz" Value_PZ="15" Level="1"/>
+        </Koefficients>
+        <WorksList>
+          <Work Caption="Россыпь и разравнивание щебня."/>
+          <Work Caption="Профилирование и планировка щебня."/>
+          <Work Caption="Укатка щебня с поливкой водой."/>
+          <Work Caption="Уход за покрытием."/>
+        </WorksList>
+      </Position>
+    </Chapter>
+  </Chapters>
+  <AddZatrats>
+    <AddZatrGlava Glava="8"/>
+    <AddZatrGlava Glava="9"/>
+    <AddZatrGlava Glava="10"/>
+    <AddZatrGlava Glava="11"/>
+    <AddZatrGlava Glava="12"/>
+    <AddZatrGlava Glava="13"/>
+    <AddZatrGlava Glava="14"/>
+    <AddZatrGlava Glava="15"/>
+  </AddZatrats>
+  <ReportOptions Options="Grouping SeparateZakPodr" Kk="1" RangingGroups="Mch Mat">
+    <RangingRates Mch="20" Mat="20"/>
+  </ReportOptions>
+</Document>

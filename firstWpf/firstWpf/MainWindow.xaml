@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <DataGrid VirtualizingPanel.IsVirtualizingWhenGrouping="True" x:Name="grid" HorizontalAlignment="Left" Height="251" Margin="23,23,0,0" VerticalAlignment="Top" Width="455" Loaded="grid_Loaded"/>
     </Grid>
 </Window>
