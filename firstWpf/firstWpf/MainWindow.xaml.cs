@@ -41,65 +41,66 @@ namespace firstWpf
             XDocument xdoc = XDocument.Parse(text);
             int Count = 0;
             List<Chapters> Chapter0 = new List<Chapters>();
-            List<Positions> Position0 = new List<Positions>();
+            List<Positions> Positions = new List<Positions>();
             List<TzmMch> TzmMch0 = new List<TzmMch>();
 
             foreach (XElement Chapterss in xdoc.Root.Elements("Chapters"))
             {
                 foreach (XElement Chapter in Chapterss.Elements("Chapter"))
                 {
-                    foreach (XAttribute attr in Chapter.Attributes("Caption"))
+                    foreach (XAttribute Chapter1 in Chapter.Attributes("Caption"))
                     {
-                        Console.WriteLine("CHAPTER    {0}", attr.Value);
+                        Console.WriteLine("CHAPTER    {0}", Chapter1.Value);
+                        Chapters newChapter;
+                        Chapter0.Add(newChapter = new Chapters() { Caption = Chapter1.Value.ToString() });
 
-                        Chapter0.Add(new Chapters() { Caption = attr.Value.ToString() });
-                        
-                    }
 
-                    foreach (XElement Position in Chapter.Elements("Position"))
-                    {
-                        foreach (XAttribute Caption in Position.Attributes("Caption"))
+
+                        foreach (XElement Position in Chapter.Elements("Position"))
                         {
-                            XAttribute Code = Position.Attributes("Code").First();
-                            XAttribute units = Position.Attributes("Units").First();
-                            Console.WriteLine("Position    {0}", Caption);
-                            Count++;
-                            
-                            
-
-                            foreach (XElement Quantity in Position.Elements("Quantity"))
+                            foreach (XAttribute Caption in Position.Attributes("Caption"))
                             {
-                                foreach (XAttribute Quantity1 in Quantity.Attributes("Fx"))
-                                {
-                                    Console.WriteLine("Quantity    {0}", Quantity1);
-                                    Chapters.Positions.Add(new Positions(Count, Code.Value.ToString(), Caption.Value.ToString(), units.Value.ToString(), Quantity1.Value.ToString()));
-                                }
-                            }
-                            
-                        }
+                                XAttribute Code = Position.Attributes("Code").First();
+                                XAttribute units = Position.Attributes("Units").First();
+                                Console.WriteLine("Position    {0}", Caption);
+                                Count++;
 
-                        foreach (XElement Resources in Position.Elements("Resources"))
-                        {
-                            foreach (XElement Tzm in Resources.Elements("Tzm"))
-                                foreach (XAttribute attr in Tzm.Attributes("Caption"))
+
+
+                                foreach (XElement Quantity in Position.Elements("Quantity"))
                                 {
-                                    Console.WriteLine("Tzm    {0}", attr);
-                                    TzmMch0.Add(new TzmMch() { Caption = attr.Value.ToString() });
+                                    foreach (XAttribute Quantity1 in Quantity.Attributes("Fx"))
+                                    {
+                                        Console.WriteLine("Quantity    {0}", Quantity1);
+                                        newChapter.Positions.Add(new Positions(Count, Code.Value.ToString(), Caption.Value.ToString(), units.Value.ToString(), Quantity1.Value.ToString()));
+                                    }
                                 }
-                                    
-                            foreach (XElement Mch in Resources.Elements("Mch"))
-                                foreach (XAttribute attr in Mch.Attributes("Caption"))
-                                {
-                                    Console.WriteLine("Tzm    {0}", attr);
-                                    TzmMch0.Add(new TzmMch() { Caption = attr.Value.ToString() });
-                                }
+
+                            }
+
+                            foreach (XElement Resources in Position.Elements("Resources"))
+                            {
+                                foreach (XElement Tzm in Resources.Elements("Tzm"))
+                                    foreach (XAttribute Tzm1 in Tzm.Attributes("Caption"))
+                                    {
+                                        Console.WriteLine("Tzm    {0}", Tzm1);
+                                        TzmMch0.Add(new TzmMch() { Caption = Tzm1.Value.ToString() });
+                                    }
+
+                                foreach (XElement Mch in Resources.Elements("Mch"))
+                                    foreach (XAttribute Mch1 in Mch.Attributes("Caption"))
+                                    {
+                                        Console.WriteLine("Tzm    {0}", Mch1);
+                                        TzmMch0.Add(new TzmMch() { Caption = Mch1.Value.ToString() });
+                                    }
+                            }
                         }
                     }
                 }
             }
 
             //grid.ItemsSource = Chapter0;
-            grid.ItemsSource = Position0;
+           // grid.ItemsSource = Position0;
             //grid.ItemsSource = TzmMch0;
             
 
@@ -108,7 +109,8 @@ namespace firstWpf
         class Chapters
         {
             public string Caption { get; set; }
-            public List<Positions> Positions { get; }
+            //public List<Positions> Positions { get; set; }
+            public List<Positions> Positions { get; set; } = new List<Positions>();
         }
         class Positions
         {
