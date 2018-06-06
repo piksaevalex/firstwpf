@@ -39,6 +39,7 @@ namespace firstWpf
             string text = File.ReadAllText(path, Encoding.GetEncoding("windows-1251"));
             //StreamReader sr = new StreamReader(path, System.Text.Encoding.GetEncoding("windows-1251"));
             XDocument xdoc = XDocument.Parse(text);
+            int Count = 0;
             List<Chapter> Chapter0 = new List<Chapter>();
             List<Position> Position0 = new List<Position>();
             List<TzmMch> TzmMch0 = new List<TzmMch>();
@@ -52,33 +53,30 @@ namespace firstWpf
                         Console.WriteLine("CHAPTER    {0}", attr.Value);
 
                         Chapter0.Add(new Chapter() { Caption = attr.Value.ToString() });
-                        // ВОТ тут attr это текст который мне нужен
-                        // Chapter = attr attr.ToString()
+                        
                     }
 
                     foreach (XElement Position in Chapter.Elements("Position"))
                     {
-                        foreach (XAttribute attr in Position.Attributes("Caption"))
+                        foreach (XAttribute Caption in Position.Attributes("Caption"))
                         {
-                            XAttribute atr = Position.Attributes("Code").First();
+                            XAttribute Code = Position.Attributes("Code").First();
                             XAttribute units = Position.Attributes("Units").First();
-                            Console.WriteLine("Position    {0}", attr);
-                            Position0.Add(new Position() {
-                                Caption = attr.Value.ToString(),
-                                Code = atr.Value.ToString(),
-                                Units = units.Value.ToString()
-                            });
-                        }
+                            Console.WriteLine("Position    {0}", Caption);
+                            Count++;
+                            
+                            
+
                             foreach (XElement Quantity in Position.Elements("Quantity"))
                             {
-                                foreach (XAttribute attr in Quantity.Attributes("Fx"))
+                                foreach (XAttribute Quantity1 in Quantity.Attributes("Fx"))
                                 {
-                                    Console.WriteLine("Quantity    {0}", attr);
-                                    Position0.Add( new Position() { Quantity = attr.Value.ToString() });
+                                    Console.WriteLine("Quantity    {0}", Quantity1);
+                                    Position0.Add(new Position(Count, Code.Value.ToString(), Caption.Value.ToString(), units.Value.ToString(), Quantity1.Value.ToString()));
                                 }
-
                             }
-                        
+                            
+                        }
 
                         foreach (XElement Resources in Position.Elements("Resources"))
                         {
@@ -119,6 +117,14 @@ namespace firstWpf
             public string Caption { get; set; }
             public string Units { get; set; }
             public string Quantity { get; set; } //Resources
+            public Position(int Number, string Code, string Caption, string Units, string Quantity)
+            {
+                this.Number = Number;
+                this.Code = Code;
+                this.Caption = Caption;
+                this.Units = Units;
+                this.Quantity = Quantity;
+            }
         }
         
         class TzmMch
