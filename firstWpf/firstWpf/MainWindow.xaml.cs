@@ -40,19 +40,19 @@ namespace firstWpf
             //StreamReader sr = new StreamReader(path, System.Text.Encoding.GetEncoding("windows-1251"));
             XDocument xdoc = XDocument.Parse(text);
             int Count = 0;
-            List<Chapter> Chapter0 = new List<Chapter>();
-            List<Position> Position0 = new List<Position>();
+            List<Chapters> Chapter0 = new List<Chapters>();
+            List<Positions> Position0 = new List<Positions>();
             List<TzmMch> TzmMch0 = new List<TzmMch>();
 
-            foreach (XElement Chapters in xdoc.Root.Elements("Chapters"))
+            foreach (XElement Chapterss in xdoc.Root.Elements("Chapters"))
             {
-                foreach (XElement Chapter in Chapters.Elements("Chapter"))
+                foreach (XElement Chapter in Chapterss.Elements("Chapter"))
                 {
                     foreach (XAttribute attr in Chapter.Attributes("Caption"))
                     {
                         Console.WriteLine("CHAPTER    {0}", attr.Value);
 
-                        Chapter0.Add(new Chapter() { Caption = attr.Value.ToString() });
+                        Chapter0.Add(new Chapters() { Caption = attr.Value.ToString() });
                         
                     }
 
@@ -72,7 +72,7 @@ namespace firstWpf
                                 foreach (XAttribute Quantity1 in Quantity.Attributes("Fx"))
                                 {
                                     Console.WriteLine("Quantity    {0}", Quantity1);
-                                    Position0.Add(new Position(Count, Code.Value.ToString(), Caption.Value.ToString(), units.Value.ToString(), Quantity1.Value.ToString()));
+                                    Chapters.Positions.Add(new Positions(Count, Code.Value.ToString(), Caption.Value.ToString(), units.Value.ToString(), Quantity1.Value.ToString()));
                                 }
                             }
                             
@@ -105,19 +105,19 @@ namespace firstWpf
 
 
         }
-        class Chapter
+        class Chapters
         {
             public string Caption { get; set; }
-            public List<Position> Positions { get; }
+            public List<Positions> Positions { get; }
         }
-        class Position
+        class Positions
         {
             public int Number { get; set; }
             public string Code { get; set; }
             public string Caption { get; set; }
             public string Units { get; set; }
             public string Quantity { get; set; } //Resources
-            public Position(int Number, string Code, string Caption, string Units, string Quantity)
+            public Positions(int Number, string Code, string Caption, string Units, string Quantity)
             {
                 this.Number = Number;
                 this.Code = Code;
