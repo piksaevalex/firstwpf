@@ -30,7 +30,7 @@ namespace firstWpf
         {
             InitializeComponent();
 
-
+            
         }
         private void grid_Loaded(object sender, RoutedEventArgs e)
         {
@@ -99,11 +99,11 @@ namespace firstWpf
                 }
             }
 
-            //grid.ItemsSource = Chapter0;
-           // grid.ItemsSource = Position0;
+            grid.ItemsSource = Chapter0;
+            //grid.ItemsSource = Position0;
             //grid.ItemsSource = TzmMch0;
-            
 
+            
 
         }
         class Chapters
