@@ -3,10 +3,81 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:firstWpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        xmlns:local="clr-namespace:firstWpf.ViewModels"
+        Title="MainWindow"
+        WindowState="Maximized">
+    
     <Grid>
-        <DataGrid VirtualizingPanel.IsVirtualizingWhenGrouping="True" x:Name="grid" HorizontalAlignment="Left" Height="251" Margin="23,23,0,0" VerticalAlignment="Top" Width="455" Loaded="grid_Loaded"/>
+        <StackPanel>
+            <DataGrid AutoGeneratingColumn="OnAutoGeneratingColumn" ItemsSource="{Binding ChaptersView}" >
+                <DataGrid.GroupStyle>
+                    <GroupStyle>
+                        <GroupStyle.ContainerStyle>
+                            <Style TargetType="{x:Type GroupItem}" >
+                                <Setter Property="Margin" Value="0,0,0,0" />
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type GroupItem}">
+                                            <Expander
+                                                Background="White"
+												BorderBrush="Black"
+												IsExpanded="True"
+												BorderThickness="0,0,0,1">
+                                                <Expander.Header>
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock VerticalAlignment="Center"
+															FontWeight="Bold"
+															Text="{Binding Path=Name}" />
+                                                    </StackPanel>
+                                                </Expander.Header>
+                                                <Expander.Content>
+                                                    <ItemsPresenter />
+                                                </Expander.Content>
+                                            </Expander>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </GroupStyle.ContainerStyle>
+                    </GroupStyle>
+                    <GroupStyle>
+                        <GroupStyle.ContainerStyle>
+                            <Style TargetType="{x:Type GroupItem}" >
+                                <Setter Property="Margin" Value="0,0,0,0" />
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type GroupItem}">
+                                            <Expander
+												BorderBrush="Black"
+												IsExpanded="True"
+												Background="White"
+												BorderThickness="0,0,0,1">
+                                                <Expander.Header>
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock VerticalAlignment="Center"
+															FontWeight="Bold"
+															Text="{Binding Path=Name}" />
+                                                        <TextBlock VerticalAlignment="Center"
+															Text=" | " />
+                                                        <TextBlock VerticalAlignment="Center"
+															FontWeight="Bold"
+															Text="{Binding Path=Name}" />
+                                                    </StackPanel>
+                                                </Expander.Header>
+                                                <Expander.Content>
+                                                    <ItemsPresenter />
+                                                </Expander.Content>
+                                            </Expander>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </GroupStyle.ContainerStyle>
+                    </GroupStyle>
+                </DataGrid.GroupStyle>
+            </DataGrid>
+        </StackPanel>
+
     </Grid>
 </Window>
