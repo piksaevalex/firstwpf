@@ -4,18 +4,24 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        xmlns:local="clr-namespace:firstWpf.ViewModels"
+        xmlns:local="namespace:firstWpf.ViewModels"
         Title="MainWindow"
         WindowState="Maximized">
     
+
     <Grid>
-        <StackPanel>
-            <DataGrid AutoGeneratingColumn="OnAutoGeneratingColumn" ItemsSource="{Binding ChaptersView}" >
+
+        <DataGrid AutoGeneratingColumn="OnAutoGeneratingColumn" ItemsSource="{Binding ChaptersView}" AutoGenerateColumns="False" HeadersVisibility="None">
+                <DataGrid.Columns>
+                <DataGridTextColumn Header="TzmMchCode" Binding="{Binding TzmMchCode}"/>
+                <DataGridTextColumn Header="TzmMchname" Width="*" Binding="{Binding TzmMchname}"/>
+                <DataGridTextColumn Header="TzmMchQuantity" Binding="{Binding TzmMchQuantity}"/>
+            </DataGrid.Columns>
                 <DataGrid.GroupStyle>
                     <GroupStyle>
                         <GroupStyle.ContainerStyle>
                             <Style TargetType="{x:Type GroupItem}" >
-                                <Setter Property="Margin" Value="0,0,0,0" />
+                                <Setter Property="Padding" Value="0,0,0,0" />
                                 <Setter Property="Template">
                                     <Setter.Value>
                                         <ControlTemplate TargetType="{x:Type GroupItem}">
@@ -28,7 +34,7 @@
                                                     <StackPanel Orientation="Horizontal">
                                                         <TextBlock VerticalAlignment="Center"
 															FontWeight="Bold"
-															Text="{Binding Path=Name}" />
+															Text="{Binding Path=Items[0].Items[0].Chaptername}" />
                                                     </StackPanel>
                                                 </Expander.Header>
                                                 <Expander.Content>
@@ -41,43 +47,63 @@
                             </Style>
                         </GroupStyle.ContainerStyle>
                     </GroupStyle>
-                    <GroupStyle>
-                        <GroupStyle.ContainerStyle>
-                            <Style TargetType="{x:Type GroupItem}" >
-                                <Setter Property="Margin" Value="0,0,0,0" />
-                                <Setter Property="Template">
-                                    <Setter.Value>
-                                        <ControlTemplate TargetType="{x:Type GroupItem}">
-                                            <Expander
+                <GroupStyle>
+                    <GroupStyle.ContainerStyle>
+                        <Style TargetType="{x:Type GroupItem}" >
+                            <Setter Property="Margin" Value="20,0,0,0" />
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type GroupItem}">
+                                        <Expander
 												BorderBrush="Black"
 												IsExpanded="True"
 												Background="White"
-												BorderThickness="0,0,0,1">
-                                                <Expander.Header>
-                                                    <StackPanel Orientation="Horizontal">
-                                                        <TextBlock VerticalAlignment="Center"
+												BorderThickness="0,0,0,0">
+                                            <Expander.Header>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock VerticalAlignment="Top"
 															FontWeight="Bold"
-															Text="{Binding Path=Name}" />
-                                                        <TextBlock VerticalAlignment="Center"
+															Text="{Binding Path=Items[0].PositionNumber}" />
+                                                    <TextBlock VerticalAlignment="Top"
 															Text=" | " />
-                                                        <TextBlock VerticalAlignment="Center"
+                                                    <TextBlock VerticalAlignment="Top"
 															FontWeight="Bold"
-															Text="{Binding Path=Name}" />
+                                                               
+															Text="{Binding Path=Items[0].PositionCode}" />
+                                                    <TextBlock VerticalAlignment="Top"
+                                                                   Text=" | " />
+                                                    <TextBlock VerticalAlignment="Top"
+                                                                   Width="800"
+                                                                   TextWrapping="Wrap"
+                                                                   FontWeight="Bold"
+                                                               
+                                                                   Text="{Binding Path=Items[0].Positionname}" />
+                                                    <TextBlock VerticalAlignment="Top"
+                                                                   Text=" | " />
+                                                    <TextBlock VerticalAlignment="Top"
+                                                                   FontWeight="Bold"
+                                                                   Text="{Binding Path=Items[0].PositionUnits}" />
+                                                    <TextBlock VerticalAlignment="Top"
+                                                                   Text=" | " />
+                                                    <TextBlock VerticalAlignment="Top"
+                                                                   FontWeight="Bold"
+                                                                   Text="{Binding Path=Items[0].PositionQuantity}" />
                                                     </StackPanel>
-                                                </Expander.Header>
-                                                <Expander.Content>
-                                                    <ItemsPresenter />
-                                                </Expander.Content>
-                                            </Expander>
-                                        </ControlTemplate>
-                                    </Setter.Value>
-                                </Setter>
-                            </Style>
-                        </GroupStyle.ContainerStyle>
-                    </GroupStyle>
-                </DataGrid.GroupStyle>
+
+                                            </Expander.Header>
+                                            <Expander.Content>
+                                                <ItemsPresenter />
+                                            </Expander.Content>
+                                        </Expander>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </GroupStyle.ContainerStyle>
+                </GroupStyle>
+            </DataGrid.GroupStyle>
             </DataGrid>
-        </StackPanel>
+        
 
     </Grid>
 </Window>
