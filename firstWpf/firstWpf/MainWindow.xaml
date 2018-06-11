@@ -3,107 +3,110 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d"
-        xmlns:local="namespace:firstWpf.ViewModels"
+        mc:Ignorable="d" d:DataContext="{d:DesignInstance local:MainViewModel}"
+        xmlns:local="clr-namespace:firstWpf.ViewModels"
+        xmlns:firstWpf="clr-namespace:firstWpf"
+        xmlns:models="clr-namespace:firstWpf.Models"
         Title="MainWindow"
         WindowState="Maximized">
-    
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
 
+        <HierarchicalDataTemplate x:Key="ChapterTemplate" DataType="{x:Type models:Chapter}"
+                                  ItemsSource="{Binding Positions}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20" SharedSizeGroup="NumberColumn" />
+                    <ColumnDefinition Width="*" SharedSizeGroup="CodeColumn" />
+                    <ColumnDefinition Width="3*" SharedSizeGroup="NameColumn" />
+                    <ColumnDefinition Width="*" SharedSizeGroup="UnitsColumn" />
+                    <ColumnDefinition Width="*" SharedSizeGroup="QuantityColumn" />
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" Grid.ColumnSpan="4" BorderBrush="Black" BorderThickness="1" Margin="0 5">
+                    <TextBlock Text="{Binding Name}" />
+                </Border>
+            </Grid>
+        </HierarchicalDataTemplate>
+
+        <HierarchicalDataTemplate x:Key="PositionTemplate" DataType="{x:Type models:Position}"
+                                  ItemsSource="{Binding TzmMchs}">
+            <Grid  HorizontalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20" SharedSizeGroup="NumberColumn2" />
+                    <ColumnDefinition Width="*" SharedSizeGroup="CodeColumn2" />
+                    <ColumnDefinition Width="3*" SharedSizeGroup="NameColumn2" />
+                    <ColumnDefinition Width="*" SharedSizeGroup="UnitsColumn2" />
+                    <ColumnDefinition Width="*" SharedSizeGroup="QuantityColumn2" />
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="0" BorderBrush="Black" BorderThickness="1,1,0,1" Margin="0 5">
+                    <TextBlock Text="{Binding Path=Number}" TextWrapping="Wrap" />
+                </Border>
+                <Border Grid.Column="1" BorderBrush="Black" BorderThickness="1,1,0,1"  Margin="0 5">
+                    <TextBlock Text="{Binding Path=Code}" TextWrapping="Wrap" />
+                </Border>
+                <Border Grid.Column="2" BorderBrush="Black" BorderThickness="1,1,0,1"  Margin="0 5">
+                    <TextBlock Text="{Binding Path=Name}" TextWrapping="Wrap" />
+                </Border>
+                <Border Grid.Column="3" BorderBrush="Black" BorderThickness="1,1,0,1"  Margin="0 5">
+                    <TextBlock Text="{Binding Path=Units}" TextWrapping="Wrap" />
+                </Border>
+                <Border Grid.Column="4" BorderBrush="Black" BorderThickness="1"  Margin="0 5">
+                    <TextBlock Text="{Binding Path=Quantity}" TextWrapping="Wrap" />
+                </Border>
+            </Grid>
+        </HierarchicalDataTemplate>
+
+        <HierarchicalDataTemplate x:Key="TzmMchTemplate" DataType="{x:Type models:TzmMch}">
+            <Grid HorizontalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" SharedSizeGroup="CodeColumn3" />
+                    <ColumnDefinition Width="*" SharedSizeGroup="NameColumn3" />
+                    <ColumnDefinition Width="Auto" SharedSizeGroup="QuantityColumn3" />
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="0" BorderBrush="Black" BorderThickness="1,1,0,1" Margin="0 5">
+                    <TextBlock Text="{Binding Path=Code}" TextWrapping="Wrap" />
+                </Border>
+
+                <Border Grid.Column="1" BorderBrush="Black" BorderThickness="1,1,0,1" Margin="0 5">
+                    <TextBlock Text="{Binding Path=Name}" TextWrapping="Wrap" />
+                </Border>
+
+                <Border Grid.Column="2" BorderBrush="Black" BorderThickness="1" Margin="0 5">
+                    <TextBlock Text="{Binding Path=Quantity}" TextWrapping="Wrap" />
+                </Border>
+            </Grid>
+        </HierarchicalDataTemplate>
+
+        <firstWpf:ChapterTemplateSelector x:Key="ChapterTemplateSelector"
+                                          ChapterTemplate="{StaticResource ChapterTemplate}"
+                                          PositionTemplate="{StaticResource PositionTemplate}"
+                                          TzmMchTemplate="{StaticResource TzmMchTemplate}" />
+    </Window.Resources>
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
 
-        <DataGrid AutoGeneratingColumn="OnAutoGeneratingColumn" ItemsSource="{Binding ChaptersView}" AutoGenerateColumns="False" HeadersVisibility="None">
-                <DataGrid.Columns>
-                <DataGridTextColumn Header="TzmMchCode" Binding="{Binding TzmMchCode}"/>
-                <DataGridTextColumn Header="TzmMchname" Width="*" Binding="{Binding TzmMchname}"/>
-                <DataGridTextColumn Header="TzmMchQuantity" Binding="{Binding TzmMchQuantity}"/>
-            </DataGrid.Columns>
-                <DataGrid.GroupStyle>
-                    <GroupStyle>
-                        <GroupStyle.ContainerStyle>
-                            <Style TargetType="{x:Type GroupItem}" >
-                                <Setter Property="Padding" Value="0,0,0,0" />
-                                <Setter Property="Template">
-                                    <Setter.Value>
-                                        <ControlTemplate TargetType="{x:Type GroupItem}">
-                                            <Expander
-                                                Background="White"
-												BorderBrush="Black"
-												IsExpanded="True"
-												BorderThickness="0,0,0,1">
-                                                <Expander.Header>
-                                                    <StackPanel Orientation="Horizontal">
-                                                        <TextBlock VerticalAlignment="Center"
-															FontWeight="Bold"
-															Text="{Binding Path=Items[0].Items[0].Chaptername}" />
-                                                    </StackPanel>
-                                                </Expander.Header>
-                                                <Expander.Content>
-                                                    <ItemsPresenter />
-                                                </Expander.Content>
-                                            </Expander>
-                                        </ControlTemplate>
-                                    </Setter.Value>
-                                </Setter>
-                            </Style>
-                        </GroupStyle.ContainerStyle>
-                    </GroupStyle>
-                <GroupStyle>
-                    <GroupStyle.ContainerStyle>
-                        <Style TargetType="{x:Type GroupItem}" >
-                            <Setter Property="Margin" Value="20,0,0,0" />
-                            <Setter Property="Template">
-                                <Setter.Value>
-                                    <ControlTemplate TargetType="{x:Type GroupItem}">
-                                        <Expander
-												BorderBrush="Black"
-												IsExpanded="True"
-												Background="White"
-												BorderThickness="0,0,0,0">
-                                            <Expander.Header>
-                                                <StackPanel Orientation="Horizontal">
-                                                    <TextBlock VerticalAlignment="Top"
-															FontWeight="Bold"
-															Text="{Binding Path=Items[0].PositionNumber}" />
-                                                    <TextBlock VerticalAlignment="Top"
-															Text=" | " />
-                                                    <TextBlock VerticalAlignment="Top"
-															FontWeight="Bold"
-                                                               
-															Text="{Binding Path=Items[0].PositionCode}" />
-                                                    <TextBlock VerticalAlignment="Top"
-                                                                   Text=" | " />
-                                                    <TextBlock VerticalAlignment="Top"
-                                                                   Width="800"
-                                                                   TextWrapping="Wrap"
-                                                                   FontWeight="Bold"
-                                                               
-                                                                   Text="{Binding Path=Items[0].Positionname}" />
-                                                    <TextBlock VerticalAlignment="Top"
-                                                                   Text=" | " />
-                                                    <TextBlock VerticalAlignment="Top"
-                                                                   FontWeight="Bold"
-                                                                   Text="{Binding Path=Items[0].PositionUnits}" />
-                                                    <TextBlock VerticalAlignment="Top"
-                                                                   Text=" | " />
-                                                    <TextBlock VerticalAlignment="Top"
-                                                                   FontWeight="Bold"
-                                                                   Text="{Binding Path=Items[0].PositionQuantity}" />
-                                                    </StackPanel>
-
-                                            </Expander.Header>
-                                            <Expander.Content>
-                                                <ItemsPresenter />
-                                            </Expander.Content>
-                                        </Expander>
-                                    </ControlTemplate>
-                                </Setter.Value>
-                            </Setter>
-                        </Style>
-                    </GroupStyle.ContainerStyle>
-                </GroupStyle>
-            </DataGrid.GroupStyle>
-            </DataGrid>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Загрузка файла" Command="{Binding LoadCommand}" />
+            <Button Content="Вырузка в Эксель" IsEnabled="False" />
+        </StackPanel>
         
+        <TreeView Grid.Row="1" 
+                  Grid.IsSharedSizeScope="True"
+                  HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch"
+                  ItemsSource="{Binding Chapters}"
+                  ItemTemplateSelector="{StaticResource ChapterTemplateSelector}" />
+        <TextBlock Grid.Row="1" 
+                   Visibility="{Binding IsBusy, Converter={StaticResource BooleanToVisibilityConverter}}" 
+                   Text="Загрузка.."
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   FontSize="32"></TextBlock>
 
     </Grid>
+    
 </Window>
