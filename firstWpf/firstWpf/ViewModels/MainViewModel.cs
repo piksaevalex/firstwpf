@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Xml.Linq;
 using firstWpf.Models;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace firstWpf.ViewModels
 {
@@ -18,6 +19,7 @@ namespace firstWpf.ViewModels
         {
             Chapters = new ObservableCollection<Chapter>();
             LoadCommand = new RelayCommand(Load);
+            ExportCommand = new RelayCommand(Export);
         }
 
         public ICommand LoadCommand { get; }
@@ -45,7 +47,7 @@ namespace firstWpf.ViewModels
             {
                 foreach (XElement Chapter in chapterss.Elements("Chapter"))
                 {
-                    int Count = 0;
+                    int count = 0;
                     XAttribute chapter1 = Chapter.Attributes("Caption").First();
                     //Chapters newChapter;
                     //Chapter0.Add(newChapter = new Chapters() { Caption = Chapter1.Value.ToString() });
@@ -56,14 +58,14 @@ namespace firstWpf.ViewModels
                         XAttribute caption = position.Attributes("Caption").First();
                         XAttribute code = position.Attributes("Code").First();
                         XAttribute units = position.Attributes("Units").First();
-                        Count++;
+                        count++;
                         XElement quantity = position.Elements("Quantity").First();
                         XAttribute quantity1 = quantity.Attributes("Fx").First();
                         string str = quantity1.Value.ToString();
                         str = str.Replace(",", ".");
                         var result = new DataTable().Compute(str, null);
 
-                        var positions = new Position(Count, code.Value, caption.Value, units.Value, result.ToString());
+                        var positions = new Position(count, code.Value, caption.Value, units.Value, result.ToString());
                         chapter.Positions.Add(positions);
 
 
@@ -97,6 +99,56 @@ namespace firstWpf.ViewModels
 
                 }
             }
+        }
+
+        private void Export(object param)
+        {
+            Excel.Application ex = new Microsoft.Office.Interop.Excel.Application();
+            ex.Visible = true;
+            ex.SheetsInNewWorkbook = 1;
+            Excel.Workbook workBook = ex.Workbooks.Add(Type.Missing);
+            ex.DisplayAlerts = false;
+            Excel.Worksheet sheet = (Excel.Worksheet)ex.Worksheets.get_Item(1);
+            sheet.Name = "XML";
+            int i = 1;
+            int c = 0;
+            int k = 0;
+            int m = 0;
+            while (c < Chapters.Count)
+            {
+                sheet.Cells[i, 1] = Chapters[c].Name;
+                i++;
+                
+                k = 0;
+                m = 0;
+                while (k < Chapters[c].Positions.Count)
+                {
+                    sheet.Cells[i, 1] = Chapters[c].Positions[k].Number;
+                    sheet.Cells[i, 2] = Chapters[c].Positions[k].Code;
+                    sheet.Cells[i, 3] = Chapters[c].Positions[k].Name;
+                    sheet.Cells[i, 4] = Chapters[c].Positions[k].Units;
+                    sheet.Cells[i, 5] = Chapters[c].Positions[k].Quantity;
+
+                    i++;
+                    m = 0;
+                    while (m < Chapters[c].Positions[k].TzmMchs.Count)
+                    {
+                        sheet.Cells[i, 3] = Chapters[c].Positions[k].TzmMchs[m].Code;
+                        sheet.Cells[i, 4] = Chapters[c].Positions[k].TzmMchs[m].Name;
+                        sheet.Cells[i, 5] = Chapters[c].Positions[k].TzmMchs[m].Quantity;
+                        m++;
+                        i++;
+                    }
+                    k++;
+                }
+                c++;
+            }
+            sheet.Columns.AutoFit();
+
+            
+            ex.Application.ActiveWorkbook.SaveAs("C:\\Users\\Алёша\\Desktop\\firstwpf\\firstWpf\\doc.xlsx", Type.Missing,
+                Type.Missing, Type.Missing, Type.Missing, Type.Missing, Excel.XlSaveAsAccessMode.xlNoChange,
+                Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
         }
     }
 }

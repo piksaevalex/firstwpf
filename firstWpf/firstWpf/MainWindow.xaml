@@ -14,7 +14,7 @@
 
         <HierarchicalDataTemplate x:Key="ChapterTemplate" DataType="{x:Type models:Chapter}"
                                   ItemsSource="{Binding Positions}">
-            <Grid>
+            <Grid HorizontalAlignment="Stretch">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="20" SharedSizeGroup="NumberColumn" />
                     <ColumnDefinition Width="*" SharedSizeGroup="CodeColumn" />
@@ -38,20 +38,23 @@
                     <ColumnDefinition Width="*" SharedSizeGroup="UnitsColumn2" />
                     <ColumnDefinition Width="*" SharedSizeGroup="QuantityColumn2" />
                 </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
 
-                <Border Grid.Column="0" BorderBrush="Black" BorderThickness="1,1,0,1" Margin="0 5">
+                <Border Grid.Column="0" Grid.Row="0" BorderBrush="Black" BorderThickness="1,1,0,1" Margin="0 5">
                     <TextBlock Text="{Binding Path=Number}" TextWrapping="Wrap" />
                 </Border>
-                <Border Grid.Column="1" BorderBrush="Black" BorderThickness="1,1,0,1"  Margin="0 5">
+                <Border Grid.Column="1" Grid.Row="0" BorderBrush="Black" BorderThickness="1,1,0,1"  Margin="0 5">
                     <TextBlock Text="{Binding Path=Code}" TextWrapping="Wrap" />
                 </Border>
-                <Border Grid.Column="2" BorderBrush="Black" BorderThickness="1,1,0,1"  Margin="0 5">
+                <Border Grid.Column="2" Grid.Row="0" BorderBrush="Black" BorderThickness="1,1,0,1"  Margin="0 5">
                     <TextBlock Text="{Binding Path=Name}" TextWrapping="Wrap" />
                 </Border>
-                <Border Grid.Column="3" BorderBrush="Black" BorderThickness="1,1,0,1"  Margin="0 5">
+                <Border Grid.Column="3" Grid.Row="0" BorderBrush="Black" BorderThickness="1,1,0,1"  Margin="0 5">
                     <TextBlock Text="{Binding Path=Units}" TextWrapping="Wrap" />
                 </Border>
-                <Border Grid.Column="4" BorderBrush="Black" BorderThickness="1"  Margin="0 5">
+                <Border Grid.Column="4" Grid.Row="0" BorderBrush="Black" BorderThickness="1"  Margin="0 5">
                     <TextBlock Text="{Binding Path=Quantity}" TextWrapping="Wrap" />
                 </Border>
             </Grid>
@@ -62,7 +65,7 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" SharedSizeGroup="CodeColumn3" />
                     <ColumnDefinition Width="*" SharedSizeGroup="NameColumn3" />
-                    <ColumnDefinition Width="Auto" SharedSizeGroup="QuantityColumn3" />
+                    <ColumnDefinition Width="40" SharedSizeGroup="QuantityColumn3" />
                 </Grid.ColumnDefinitions>
 
                 <Border Grid.Column="0" BorderBrush="Black" BorderThickness="1,1,0,1" Margin="0 5">
@@ -92,7 +95,7 @@
 
         <StackPanel Orientation="Horizontal">
             <Button Content="Загрузка файла" Command="{Binding LoadCommand}" />
-            <Button Content="Вырузка в Эксель" IsEnabled="False" />
+            <Button Content="Вырузка в Эксель" Command="{Binding ExportCommand}"/>
         </StackPanel>
         
         <TreeView Grid.Row="1" 
