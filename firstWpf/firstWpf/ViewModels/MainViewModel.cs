@@ -33,7 +33,7 @@ namespace firstWpf.ViewModels
         {
             string path = "ЛС 02-01-01-01.xml";
             string text;
-
+            
             using (var reader = File.OpenText(path))
             {
                 IsBusy = true;
@@ -42,13 +42,12 @@ namespace firstWpf.ViewModels
                 IsBusy = false;
             }
 
-            IsExport = true;
             var windows1251 = Encoding.GetEncoding("windows-1251");
             var utf8 = Encoding.UTF8;
-
             var originalBytes = windows1251.GetBytes(text.ToString());
             var correctXmlString = utf8.GetString(originalBytes);
             XDocument xdoc = XDocument.Parse(correctXmlString);
+
             //XDocument xdoc = XDocument.Parse(text);
 
             foreach (XElement chapterss in xdoc.Root.Elements("Chapters"))
@@ -107,6 +106,7 @@ namespace firstWpf.ViewModels
 
                 }
             }
+            IsExport = true;
         }
 
         private void Export(object param)
