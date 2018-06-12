@@ -13,6 +13,7 @@ namespace firstWpf
         {
             InitializeComponent();
             DataContext = new MainViewModel();
+            
         }      
     }
 }

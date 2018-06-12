@@ -24,6 +24,23 @@ namespace firstWpf.Models
                 OnPropertyChanged();
             }
         }
+
+        private bool _isExport;
+
+        public bool IsExport
+        {
+            get => _isExport;
+            protected set
+            {
+                if (_isExport == value)
+                {
+                    return;
+                }
+
+                _isExport = value;
+                OnPropertyChanged();
+            }
+        }
     }
 
     public class NotifyPropertyChangedBase : INotifyPropertyChanged

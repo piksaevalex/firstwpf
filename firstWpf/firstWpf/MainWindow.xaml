@@ -30,11 +30,11 @@
 
         <HierarchicalDataTemplate x:Key="PositionTemplate" DataType="{x:Type models:Position}"
                                   ItemsSource="{Binding TzmMchs}">
-            <Grid  HorizontalAlignment="Stretch">
+            <Grid  HorizontalAlignment="Stretch" Height="Auto">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="20" SharedSizeGroup="NumberColumn2" />
                     <ColumnDefinition Width="*" SharedSizeGroup="CodeColumn2" />
-                    <ColumnDefinition Width="3*" SharedSizeGroup="NameColumn2" />
+                    <ColumnDefinition Width="400" SharedSizeGroup="NameColumn2" />
                     <ColumnDefinition Width="*" SharedSizeGroup="UnitsColumn2" />
                     <ColumnDefinition Width="*" SharedSizeGroup="QuantityColumn2" />
                 </Grid.ColumnDefinitions>
@@ -43,19 +43,19 @@
                 </Grid.RowDefinitions>
 
                 <Border Grid.Column="0" Grid.Row="0" BorderBrush="Black" BorderThickness="1,1,0,1" Margin="0 5">
-                    <TextBlock Text="{Binding Path=Number}" TextWrapping="Wrap" />
+                    <TextBlock Text="{Binding Path=Number}" TextWrapping="Wrap" Margin="5 2" />
                 </Border>
                 <Border Grid.Column="1" Grid.Row="0" BorderBrush="Black" BorderThickness="1,1,0,1"  Margin="0 5">
-                    <TextBlock Text="{Binding Path=Code}" TextWrapping="Wrap" />
+                    <TextBlock Text="{Binding Path=Code}" TextWrapping="Wrap" Margin="5 2" />
                 </Border>
                 <Border Grid.Column="2" Grid.Row="0" BorderBrush="Black" BorderThickness="1,1,0,1"  Margin="0 5">
-                    <TextBlock Text="{Binding Path=Name}" TextWrapping="Wrap" />
+                    <TextBlock Text="{Binding Path=Name}" TextWrapping="Wrap" Margin="5 2" />
                 </Border>
                 <Border Grid.Column="3" Grid.Row="0" BorderBrush="Black" BorderThickness="1,1,0,1"  Margin="0 5">
-                    <TextBlock Text="{Binding Path=Units}" TextWrapping="Wrap" />
+                    <TextBlock Text="{Binding Path=Units}" TextWrapping="Wrap"  Margin="5 2"/>
                 </Border>
                 <Border Grid.Column="4" Grid.Row="0" BorderBrush="Black" BorderThickness="1"  Margin="0 5">
-                    <TextBlock Text="{Binding Path=Quantity}" TextWrapping="Wrap" />
+                    <TextBlock Text="{Binding Path=Quantity}" TextWrapping="Wrap"  Margin="5 2"/>
                 </Border>
             </Grid>
         </HierarchicalDataTemplate>
@@ -63,21 +63,21 @@
         <HierarchicalDataTemplate x:Key="TzmMchTemplate" DataType="{x:Type models:TzmMch}">
             <Grid HorizontalAlignment="Stretch">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" SharedSizeGroup="CodeColumn3" />
-                    <ColumnDefinition Width="*" SharedSizeGroup="NameColumn3" />
-                    <ColumnDefinition Width="40" SharedSizeGroup="QuantityColumn3" />
+                    <ColumnDefinition Width="*" SharedSizeGroup="CodeColumn2" />
+                    <ColumnDefinition Width="400" SharedSizeGroup="NameColumn3" />
+                    <ColumnDefinition Width="*" SharedSizeGroup="QuantityColumn2" />
                 </Grid.ColumnDefinitions>
 
-                <Border Grid.Column="0" BorderBrush="Black" BorderThickness="1,1,0,1" Margin="0 5">
-                    <TextBlock Text="{Binding Path=Code}" TextWrapping="Wrap" />
+                <Border Grid.Column="0" BorderBrush="Black" BorderThickness="1,1,0,1" Margin="3 5 0 5">
+                    <TextBlock Text="{Binding Path=Code}" TextWrapping="Wrap" Margin="5 2"/>
                 </Border>
 
                 <Border Grid.Column="1" BorderBrush="Black" BorderThickness="1,1,0,1" Margin="0 5">
-                    <TextBlock Text="{Binding Path=Name}" TextWrapping="Wrap" />
+                    <TextBlock Text="{Binding Path=Name}" TextWrapping="Wrap"  Margin="5 2"/>
                 </Border>
 
                 <Border Grid.Column="2" BorderBrush="Black" BorderThickness="1" Margin="0 5">
-                    <TextBlock Text="{Binding Path=Quantity}" TextWrapping="Wrap" />
+                    <TextBlock Text="{Binding Path=Quantity}" TextWrapping="Wrap" Margin="5 2" />
                 </Border>
             </Grid>
         </HierarchicalDataTemplate>
@@ -87,7 +87,7 @@
                                           PositionTemplate="{StaticResource PositionTemplate}"
                                           TzmMchTemplate="{StaticResource TzmMchTemplate}" />
     </Window.Resources>
-    <Grid>
+    <Grid >
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
@@ -95,12 +95,17 @@
 
         <StackPanel Orientation="Horizontal">
             <Button Content="Загрузка файла" Command="{Binding LoadCommand}" />
-            <Button Content="Вырузка в Эксель" Command="{Binding ExportCommand}"/>
+            <Button Content="Вырузка в Эксель"
+                    Visibility="{Binding IsExport, Converter={StaticResource BooleanToVisibilityConverter}}" 
+                     Command="{Binding ExportCommand}"/>
         </StackPanel>
         
         <TreeView Grid.Row="1" 
                   Grid.IsSharedSizeScope="True"
                   HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch"
+                  Width="Auto"
+                  Height="Auto"
+                  
                   ItemsSource="{Binding Chapters}"
                   ItemTemplateSelector="{StaticResource ChapterTemplateSelector}" />
         <TextBlock Grid.Row="1" 

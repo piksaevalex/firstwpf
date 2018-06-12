@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Xml.Linq;
@@ -17,9 +15,11 @@ namespace firstWpf.ViewModels
     {
         public MainViewModel()
         {
+            IsExport = false;
             Chapters = new ObservableCollection<Chapter>();
             LoadCommand = new RelayCommand(Load);
             ExportCommand = new RelayCommand(Export);
+
         }
 
         public ICommand LoadCommand { get; }
@@ -40,7 +40,8 @@ namespace firstWpf.ViewModels
                 await Task.Delay(1000);
                 IsBusy = false;
             }
-            
+
+            IsExport = true;
             XDocument xdoc = XDocument.Parse(text);
 
             foreach (XElement chapterss in xdoc.Root.Elements("Chapters"))
