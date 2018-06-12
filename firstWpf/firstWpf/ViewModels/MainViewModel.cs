@@ -64,8 +64,6 @@ namespace firstWpf.ViewModels
                 {
                     int count = 0;
                     XAttribute chapter1 = Chapter.Attributes("Caption").First();
-                    //Chapters newChapter;
-                    //Chapter0.Add(newChapter = new Chapters() { Caption = Chapter1.Value.ToString() });
                     var chapter = new Chapter(chapter1.Value);
 
                     foreach (XElement position in Chapter.Elements("Position"))
@@ -139,19 +137,19 @@ namespace firstWpf.ViewModels
                 m = 0;
                 while (k < Chapters[c].Positions.Count)
                 {
-                    sheet.Cells[i, 1] = Chapters[c].Positions[k].Number;
-                    sheet.Cells[i, 2] = Chapters[c].Positions[k].Code;
-                    sheet.Cells[i, 3] = Chapters[c].Positions[k].Name;
-                    sheet.Cells[i, 4] = Chapters[c].Positions[k].Units;
-                    sheet.Cells[i, 5] = Chapters[c].Positions[k].Quantity;
+                    sheet.Cells[i, 2] = Chapters[c].Positions[k].Number;
+                    sheet.Cells[i, 3] = Chapters[c].Positions[k].Code;
+                    sheet.Cells[i, 4] = Chapters[c].Positions[k].Name;
+                    sheet.Cells[i, 5] = Chapters[c].Positions[k].Units;
+                    sheet.Cells[i, 6] = Chapters[c].Positions[k].Quantity;
 
                     i++;
                     m = 0;
                     while (m < Chapters[c].Positions[k].TzmMchs.Count)
                     {
-                        sheet.Cells[i, 2] = Chapters[c].Positions[k].TzmMchs[m].Code;
-                        sheet.Cells[i, 3] = Chapters[c].Positions[k].TzmMchs[m].Name;
-                        sheet.Cells[i, 4] = Chapters[c].Positions[k].TzmMchs[m].Quantity;
+                        sheet.Cells[i, 7] = Chapters[c].Positions[k].TzmMchs[m].Code;
+                        sheet.Cells[i, 8] = Chapters[c].Positions[k].TzmMchs[m].Name;
+                        sheet.Cells[i, 9] = Chapters[c].Positions[k].TzmMchs[m].Quantity;
                         m++;
                         i++;
                     }
