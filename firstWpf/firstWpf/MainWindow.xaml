@@ -32,7 +32,7 @@
                                   ItemsSource="{Binding TzmMchs}">
             <Grid  HorizontalAlignment="Stretch" Height="Auto">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="20" SharedSizeGroup="NumberColumn2" />
+                    <ColumnDefinition Width="*" SharedSizeGroup="NumberColumn2" />
                     <ColumnDefinition Width="*" SharedSizeGroup="CodeColumn2" />
                     <ColumnDefinition Width="400" SharedSizeGroup="NameColumn2" />
                     <ColumnDefinition Width="*" SharedSizeGroup="UnitsColumn2" />

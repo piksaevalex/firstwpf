@@ -3,6 +3,7 @@ using System.Collections.ObjectModel;
 using System.Data;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Xml.Linq;
@@ -30,7 +31,7 @@ namespace firstWpf.ViewModels
 
         private async void Load(object param)
         {
-            string path = "../../LS.xml";
+            string path = "ЛС 02-01-01-01.xml";
             string text;
 
             using (var reader = File.OpenText(path))
@@ -42,7 +43,13 @@ namespace firstWpf.ViewModels
             }
 
             IsExport = true;
-            XDocument xdoc = XDocument.Parse(text);
+            var windows1251 = Encoding.GetEncoding("windows-1251");
+            var utf8 = Encoding.UTF8;
+
+            var originalBytes = windows1251.GetBytes(text.ToString());
+            var correctXmlString = utf8.GetString(originalBytes);
+            XDocument xdoc = XDocument.Parse(correctXmlString);
+            //XDocument xdoc = XDocument.Parse(text);
 
             foreach (XElement chapterss in xdoc.Root.Elements("Chapters"))
             {
@@ -64,8 +71,8 @@ namespace firstWpf.ViewModels
                         XAttribute quantity1 = quantity.Attributes("Fx").First();
                         string str = quantity1.Value.ToString();
                         str = str.Replace(",", ".");
-                        var result = new DataTable().Compute(str, null);
-
+                        decimal result = Convert.ToDecimal(new DataTable().Compute(str, null));
+                        result = Decimal.Round(result, 3);
                         var positions = new Position(count, code.Value, caption.Value, units.Value, result.ToString());
                         chapter.Positions.Add(positions);
 
@@ -111,10 +118,10 @@ namespace firstWpf.ViewModels
             ex.DisplayAlerts = false;
             Excel.Worksheet sheet = (Excel.Worksheet)ex.Worksheets.get_Item(1);
             sheet.Name = "XML";
-            int i = 1;
-            int c = 0;
-            int k = 0;
-            int m = 0;
+            int i = 1; // Номер строки в exel 
+            int c = 0; // индекс элементов первого уровня
+            int k = 0; // индекс элементов второго уровня
+            int m = 0; // индекс элементов третьего уровня
             while (c < Chapters.Count)
             {
                 sheet.Cells[i, 1] = Chapters[c].Name;
@@ -134,9 +141,9 @@ namespace firstWpf.ViewModels
                     m = 0;
                     while (m < Chapters[c].Positions[k].TzmMchs.Count)
                     {
-                        sheet.Cells[i, 3] = Chapters[c].Positions[k].TzmMchs[m].Code;
-                        sheet.Cells[i, 4] = Chapters[c].Positions[k].TzmMchs[m].Name;
-                        sheet.Cells[i, 5] = Chapters[c].Positions[k].TzmMchs[m].Quantity;
+                        sheet.Cells[i, 2] = Chapters[c].Positions[k].TzmMchs[m].Code;
+                        sheet.Cells[i, 3] = Chapters[c].Positions[k].TzmMchs[m].Name;
+                        sheet.Cells[i, 4] = Chapters[c].Positions[k].TzmMchs[m].Quantity;
                         m++;
                         i++;
                     }
@@ -147,7 +154,7 @@ namespace firstWpf.ViewModels
             sheet.Columns.AutoFit();
 
             
-            ex.Application.ActiveWorkbook.SaveAs("C:\\Users\\Алёша\\Desktop\\firstwpf\\firstWpf\\doc.xlsx", Type.Missing,
+            ex.Application.ActiveWorkbook.SaveAs("doc.xlsx", Type.Missing,
                 Type.Missing, Type.Missing, Type.Missing, Type.Missing, Excel.XlSaveAsAccessMode.xlNoChange,
                 Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
         }
