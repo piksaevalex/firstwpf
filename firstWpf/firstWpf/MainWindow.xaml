@@ -10,7 +10,7 @@
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
 
-        <HierarchicalDataTemplate x:Key="ChapterTemplate" DataType="{x:Type firstWpf:Chapter}"
+        <HierarchicalDataTemplate x:Key="ChapterTemplate" DataType="{x:Type firstWpf:Models}"
                                   ItemsSource="{Binding Positions}">
             <Grid HorizontalAlignment="Stretch">
                 <Grid.ColumnDefinitions>
@@ -28,7 +28,7 @@
 
         <HierarchicalDataTemplate x:Key="PositionTemplate" DataType="{x:Type firstWpf:Position}"
                                   ItemsSource="{Binding TzmMchs}">
-            <Grid  HorizontalAlignment="Stretch" Height="Auto">
+            <Grid HorizontalAlignment="Stretch" Height="Auto">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" SharedSizeGroup="NumberColumn2" />
                     <ColumnDefinition Width="*" SharedSizeGroup="CodeColumn2" />
@@ -43,17 +43,17 @@
                 <Border Grid.Column="0" Grid.Row="0" BorderBrush="Black" BorderThickness="1,1,0,1" Margin="0 5">
                     <TextBlock Text="{Binding Path=Number}" TextWrapping="Wrap" Margin="5 2" />
                 </Border>
-                <Border Grid.Column="1" Grid.Row="0" BorderBrush="Black" BorderThickness="1,1,0,1"  Margin="0 5">
+                <Border Grid.Column="1" Grid.Row="0" BorderBrush="Black" BorderThickness="1,1,0,1" Margin="0 5">
                     <TextBlock Text="{Binding Path=Code}" TextWrapping="Wrap" Margin="5 2" />
                 </Border>
-                <Border Grid.Column="2" Grid.Row="0" BorderBrush="Black" BorderThickness="1,1,0,1"  Margin="0 5">
+                <Border Grid.Column="2" Grid.Row="0" BorderBrush="Black" BorderThickness="1,1,0,1" Margin="0 5">
                     <TextBlock Text="{Binding Path=Name}" TextWrapping="Wrap" Margin="5 2" />
                 </Border>
-                <Border Grid.Column="3" Grid.Row="0" BorderBrush="Black" BorderThickness="1,1,0,1"  Margin="0 5">
-                    <TextBlock Text="{Binding Path=Units}" TextWrapping="Wrap"  Margin="5 2"/>
+                <Border Grid.Column="3" Grid.Row="0" BorderBrush="Black" BorderThickness="1,1,0,1" Margin="0 5">
+                    <TextBlock Text="{Binding Path=Units}" TextWrapping="Wrap" Margin="5 2" />
                 </Border>
-                <Border Grid.Column="4" Grid.Row="0" BorderBrush="Black" BorderThickness="1"  Margin="0 5">
-                    <TextBlock Text="{Binding Path=Quantity}" TextWrapping="Wrap"  Margin="5 2"/>
+                <Border Grid.Column="4" Grid.Row="0" BorderBrush="Black" BorderThickness="1" Margin="0 5">
+                    <TextBlock Text="{Binding Path=Quantity}" TextWrapping="Wrap" Margin="5 2" />
                 </Border>
             </Grid>
         </HierarchicalDataTemplate>
@@ -67,11 +67,11 @@
                 </Grid.ColumnDefinitions>
 
                 <Border Grid.Column="0" BorderBrush="Black" BorderThickness="1,1,0,1" Margin="0 5 0 5">
-                    <TextBlock Text="{Binding Path=Code}" TextWrapping="Wrap" Margin="5 2"/>
+                    <TextBlock Text="{Binding Path=Code}" TextWrapping="Wrap" Margin="5 2" />
                 </Border>
 
                 <Border Grid.Column="1" BorderBrush="Black" BorderThickness="1,1,0,1" Margin="0 5">
-                    <TextBlock Text="{Binding Path=Name}" TextWrapping="Wrap"  Margin="5 2"/>
+                    <TextBlock Text="{Binding Path=Name}" TextWrapping="Wrap" Margin="5 2" />
                 </Border>
 
                 <Border Grid.Column="2" BorderBrush="Black" BorderThickness="1" Margin="0 5">
@@ -85,7 +85,7 @@
                                           PositionTemplate="{StaticResource PositionTemplate}"
                                           TzmMchTemplate="{StaticResource TzmMchTemplate}" />
     </Window.Resources>
-    <Grid >
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
@@ -94,25 +94,24 @@
         <StackPanel Orientation="Horizontal">
             <Button Content="Загрузка файла" Command="{Binding LoadCommand}" />
             <Button Content="Вырузка в Эксель"
-                    Visibility="{Binding IsExport, Converter={StaticResource BooleanToVisibilityConverter}}" 
-                     Command="{Binding ExportCommand}"/>
+                    Command="{Binding ExportCommand}" />
         </StackPanel>
-        
-        <TreeView Grid.Row="1" 
+
+        <TreeView Grid.Row="1"
                   Grid.IsSharedSizeScope="True"
                   HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch"
                   Width="Auto"
                   Height="Auto"
-                  
+
                   ItemsSource="{Binding Chapters}"
                   ItemTemplateSelector="{StaticResource ChapterTemplateSelector}" />
-        <TextBlock Grid.Row="1" 
-                   Visibility="{Binding IsBusy, Converter={StaticResource BooleanToVisibilityConverter}}" 
+        <TextBlock Grid.Row="1"
+                   Visibility="{Binding IsBusy, Converter={StaticResource BooleanToVisibilityConverter}}"
                    Text="Загрузка.."
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center"
-                   FontSize="32"></TextBlock>
+                   FontSize="32" />
 
     </Grid>
-    
+
 </Window>

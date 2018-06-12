@@ -13,7 +13,7 @@ namespace firstWpf
         {
             switch (item)
             {
-                case Chapter _:
+                case Models _:
                     return ChapterTemplate;
                 case Position _:
                     return PositionTemplate;

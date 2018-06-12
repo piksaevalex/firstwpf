@@ -15,17 +15,12 @@ namespace firstWpf
             get => _isBusy;
             protected set
             {
-                if (_isBusy == value)
-                {
-                    return;
-                }
+                if (_isBusy == value) return;
 
                 _isBusy = value;
                 OnPropertyChanged();
             }
         }
-
-       
     }
 
     public class NotifyPropertyChangedBase : INotifyPropertyChanged
@@ -40,8 +35,8 @@ namespace firstWpf
 
     public class RelayCommand : ICommand
     {
-        private readonly Action<object> _execute;
         private readonly Func<object, bool> _canExecute;
+        private readonly Action<object> _execute;
 
         public RelayCommand(Action<object> execute, Func<object, bool> canExecute = null)
         {
@@ -59,21 +54,18 @@ namespace firstWpf
             return _canExecute == null || _canExecute(parameter);
         }
 
+        public event EventHandler CanExecuteChanged;
+
         public void OnCanExecuteChanged()
         {
             var handler = CanExecuteChanged;
-            if (handler != null)
-            {
-                handler(this, EventArgs.Empty);
-            }
+            if (handler != null) handler(this, EventArgs.Empty);
         }
-
-        public event EventHandler CanExecuteChanged;
     }
 
-    public class Chapter : NotifyPropertyChangedBase
+    public class Models : NotifyPropertyChangedBase
     {
-        public Chapter(string name)
+        public Models(string name)
         {
             Name = name;
             Positions = new ObservableCollection<Position>();
@@ -120,5 +112,4 @@ namespace firstWpf
         public string Units { get; }
         public string Quantity { get; }
     }
-
 }

@@ -19,17 +19,16 @@ namespace firstWpf
 
         public MainViewModel()
         {
-            Chapters = new ObservableCollection<Chapter>();
+            Chapters = new ObservableCollection<Models>();
             LoadCommand = new RelayCommand(Load);
             ExportCommand = new RelayCommand(Export, CanExport);
-            
         }
 
         public RelayCommand LoadCommand { get; }
 
         public RelayCommand ExportCommand { get; }
 
-        public ObservableCollection<Chapter> Chapters { get; }
+        public ObservableCollection<Models> Chapters { get; }
 
         public string GetPath()
         {
@@ -43,8 +42,6 @@ namespace firstWpf
         {
             try
             {
-
-
                 var path = GetPath();
                 if (path == null) return;
                 string text;
@@ -65,7 +62,7 @@ namespace firstWpf
                 {
                     var count = 0;
                     var chapterCaption = chapter.Attributes("Caption").First();
-                    var newchapter = new Chapter(chapterCaption.Value);
+                    var newchapter = new Models(chapterCaption.Value);
 
                     foreach (var position in chapter.Elements("Position"))
                     {
@@ -120,8 +117,6 @@ namespace firstWpf
             {
                 IsBusy = false;
             }
-
-
         }
 
         private async void Export(object param)
@@ -129,7 +124,7 @@ namespace firstWpf
             try
             {
                 IsBusy = true;
-                await ExportAsync();               
+                await ExportAsync();
             }
             catch (Exception e)
             {
@@ -139,14 +134,12 @@ namespace firstWpf
             {
                 IsBusy = false;
             }
-
         }
 
         private Task ExportAsync()
         {
             return Task.Run(() =>
             {
-            
                 var ex = new Application();
                 ex.Visible = true;
                 ex.SheetsInNewWorkbook = 1;
@@ -197,7 +190,6 @@ namespace firstWpf
                     Type.Missing, Type.Missing, Type.Missing, Type.Missing, XlSaveAsAccessMode.xlNoChange,
                     Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
             });
-
         }
 
         private bool CanExport(object param)
@@ -211,6 +203,5 @@ namespace firstWpf
             var result = Convert.ToDecimal(new DataTable().Compute(str, null));
             return decimal.Round(result, 3);
         }
-
-    } 
+    }
 }
