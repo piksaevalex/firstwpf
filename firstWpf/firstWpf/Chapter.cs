@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
 
-namespace firstWpf.Models
+namespace firstWpf
 {
     public class ViewModelBase : NotifyPropertyChangedBase
     {
@@ -25,22 +25,7 @@ namespace firstWpf.Models
             }
         }
 
-        private bool _isExport;
-
-        public bool IsExport
-        {
-            get => _isExport;
-            protected set
-            {
-                if (_isExport == value)
-                {
-                    return;
-                }
-
-                _isExport = value;
-                OnPropertyChanged();
-            }
-        }
+       
     }
 
     public class NotifyPropertyChangedBase : INotifyPropertyChanged
@@ -72,6 +57,15 @@ namespace firstWpf.Models
         public bool CanExecute(object parameter)
         {
             return _canExecute == null || _canExecute(parameter);
+        }
+
+        public void OnCanExecuteChanged()
+        {
+            var handler = CanExecuteChanged;
+            if (handler != null)
+            {
+                handler(this, EventArgs.Empty);
+            }
         }
 
         public event EventHandler CanExecuteChanged;

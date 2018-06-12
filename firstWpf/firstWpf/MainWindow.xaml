@@ -3,16 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DataContext="{d:DesignInstance local:MainViewModel}"
-        xmlns:local="clr-namespace:firstWpf.ViewModels"
+        mc:Ignorable="d" d:DataContext="{d:DesignInstance firstWpf:MainViewModel}"
         xmlns:firstWpf="clr-namespace:firstWpf"
-        xmlns:models="clr-namespace:firstWpf.Models"
         Title="MainWindow"
         WindowState="Maximized">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
 
-        <HierarchicalDataTemplate x:Key="ChapterTemplate" DataType="{x:Type models:Chapter}"
+        <HierarchicalDataTemplate x:Key="ChapterTemplate" DataType="{x:Type firstWpf:Chapter}"
                                   ItemsSource="{Binding Positions}">
             <Grid HorizontalAlignment="Stretch">
                 <Grid.ColumnDefinitions>
@@ -28,7 +26,7 @@
             </Grid>
         </HierarchicalDataTemplate>
 
-        <HierarchicalDataTemplate x:Key="PositionTemplate" DataType="{x:Type models:Position}"
+        <HierarchicalDataTemplate x:Key="PositionTemplate" DataType="{x:Type firstWpf:Position}"
                                   ItemsSource="{Binding TzmMchs}">
             <Grid  HorizontalAlignment="Stretch" Height="Auto">
                 <Grid.ColumnDefinitions>
@@ -60,7 +58,7 @@
             </Grid>
         </HierarchicalDataTemplate>
 
-        <HierarchicalDataTemplate x:Key="TzmMchTemplate" DataType="{x:Type models:TzmMch}">
+        <HierarchicalDataTemplate x:Key="TzmMchTemplate" DataType="{x:Type firstWpf:TzmMch}">
             <Grid HorizontalAlignment="Stretch" Margin="5 0 0 0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" SharedSizeGroup="CodeColumn2" />
