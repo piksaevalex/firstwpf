@@ -30,14 +30,6 @@ namespace firstWpf
 
         public ObservableCollection<Models> Chapters { get; }
 
-        public string GetPath()
-        {
-            var dialog = new OpenFileDialog();
-            if (dialog.ShowDialog() == true) return dialog.FileName;
-            return null;
-        }
-
-
         private async void Load(object param)
         {
             try
@@ -190,6 +182,13 @@ namespace firstWpf
                     Type.Missing, Type.Missing, Type.Missing, Type.Missing, XlSaveAsAccessMode.xlNoChange,
                     Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
             });
+        }
+
+        private string GetPath()
+        {
+            var dialog = new OpenFileDialog();
+            if (dialog.ShowDialog() == true) return dialog.FileName;
+            return null;
         }
 
         private bool CanExport(object param)
