@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="windows-1251"?>
+<?xml version="1.0" encoding="windows-1251"?>
 <Document ProgramVersion="8.1.1.20069" Generator="GrandSmeta" DocumentType="{2B0470FD-477C-4359-9F34-EEBE36B7D340}">
   <Properties LocNum="02-01-01-01"/>
   <Parameters Options="RoundPos SeparateFot" BasePrices="2001" BaseCalcVrs="Vr2001" TzDigits="2" BlockRoundMode="Smart" MultKPosCalcMode="UseTotalMult" TempZone="1" TsnTempZone="1" MatDigits="2" MatRoundMode="SignDigitsPreserveInt" PosKDigits="2" ItogOptions="SeparateChapters SeparateVrs" FirstItogItem="K" ItogExpandTo="Default">

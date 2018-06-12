@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Xml.Linq;
 using firstWpf.Models;
+using Microsoft.Win32;
 using Excel = Microsoft.Office.Interop.Excel;
 
 namespace firstWpf.ViewModels
@@ -29,26 +30,33 @@ namespace firstWpf.ViewModels
 
         public ObservableCollection<Chapter> Chapters { get; }
 
+        public string GetPath()
+        {
+            var dialog = new OpenFileDialog();
+            if (dialog.ShowDialog() == true)
+            {
+                return dialog.FileName;
+            }
+            return null;
+        }
+
         private async void Load(object param)
         {
-            string path = "ЛС 02-01-01-01.xml";
+            
+
+            string path = GetPath();
             string text;
             
-            using (var reader = File.OpenText(path))
+            using (StreamReader str = new StreamReader(path, Encoding.Default))
             {
                 IsBusy = true;
-                text = await reader.ReadToEndAsync();
+                text = await str.ReadToEndAsync();
+
                 await Task.Delay(1000);
                 IsBusy = false;
             }
-
-            var windows1251 = Encoding.GetEncoding("windows-1251");
-            var utf8 = Encoding.UTF8;
-            var originalBytes = windows1251.GetBytes(text.ToString());
-            var correctXmlString = utf8.GetString(originalBytes);
-            XDocument xdoc = XDocument.Parse(correctXmlString);
-
-            //XDocument xdoc = XDocument.Parse(text);
+            
+            XDocument xdoc = XDocument.Parse(text);
 
             foreach (XElement chapterss in xdoc.Root.Elements("Chapters"))
             {
